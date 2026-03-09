@@ -1,0 +1,417 @@
+const logger = require('../utils/logger');
+const IslamicModel = require('../../models/IslamicModel');
+const ChristianModel = require('../../models/ChristianModel');
+const HinduModel = require('../../models/HinduModel');
+
+// Model mapping
+const models = {
+  islamic: IslamicModel,
+  christian: ChristianModel,
+  hindu: HinduModel
+};
+
+/**
+ * Get names by religion with filtering and pagination
+ */
+const getNamesByReligion = async (religion, options = {}) => {
+  const {
+    limit = 20,
+    page = 1,
+    sort = 'asc',
+    gender,
+    origin,
+    search,
+    startsWith,
+    length,
+    popularity,
+    trending
+  } = options;
+
+  const Model = models[religion.toLowerCase()];
+  if (!Model) {
+    throw new Error(`Invalid religion: ${religion}`);
+  }
+
+  const skip = (page - 1) * limit;
+  const filterQuery = {};
+
+  // Apply filters
+  if (gender && gender.trim() !== '') {
+    filterQuery.gender = gender.toLowerCase();
+  }
+
+  if (search && search.trim() !== '') {
+    filterQuery.$or = [
+      { name: { $regex: search, $options: 'i' } },
+      { meaning: { $regex: search, $options: 'i' } },
+      { origin: { $regex: search, $options: 'i' } }
+    ];
+  }
+
+  if (origin && origin.trim() !== '') {
+    filterQuery.origin = { $regex: origin, $options: 'i' };
+  }
+
+  if (startsWith && startsWith.trim() !== '') {
+    filterQuery.name = { $regex: `^${startsWith}`, $options: 'i' };
+  }
+
+  if (length && length.trim() !== '') {
+    const [min, max] = length.split('-').map(Number);
+    if (max) {
+      filterQuery.$expr = {
+        $and: [
+          { $gte: [{ $strLenCP: '$name' }, min] },
+          { $lte: [{ $strLenCP: '$name' }, max] }
+        ]
+      };
+    } else {
+      filterQuery.$expr = { $eq: [{ $strLenCP: '$name' }, min] };
+    }
+  }
+
+  if (popularity && popularity.trim() !== '') {
+    const popValue = Number(popularity);
+    if (popValue) {
+      filterQuery.popularity = { $gte: popValue };
+    }
+  }
+
+  if (trending && trending.toLowerCase() === 'true') {
+    filterQuery.trending = true;
+  }
+
+  // Sorting logic
+  let sortQuery = {};
+  switch (sort.toLowerCase()) {
+    case 'desc':
+    case 'z-a':
+      sortQuery = { name: -1 };
+      break;
+    case 'popular':
+    case 'popularity':
+      sortQuery = { popularity: -1, name: 1 };
+      break;
+    case 'trending':
+      sortQuery = { trending: -1, popularity: -1, name: 1 };
+      break;
+    case 'length-asc':
+      sortQuery = { nameLength: 1, name: 1 };
+      break;
+    case 'length-desc':
+      sortQuery = { nameLength: -1, name: 1 };
+      break;
+    case 'newest':
+      sortQuery = { createdAt: -1 };
+      break;
+    case 'oldest':
+      sortQuery = { createdAt: 1 };
+      break;
+    case 'asc':
+    case 'a-z':
+    default:
+      sortQuery = { name: 1 };
+      break;
+  }
+
+  try {
+    const [names, totalCount, filteredCount] = await Promise.all([
+      Model.find(filterQuery)
+        .sort(sortQuery)
+        .skip(skip)
+        .limit(limit)
+        .lean(),
+      Model.countDocuments(),
+      Model.countDocuments(filterQuery)
+    ]);
+
+    return {
+      success: true,
+      religion,
+      pagination: {
+        page,
+        limit,
+        totalPages: Math.ceil(filteredCount / limit),
+        totalCount: filteredCount,
+        hasMore: skip + names.length < filteredCount
+      },
+      filtersApplied: {
+        gender: gender || null,
+        search: search || null,
+        origin: origin || null,
+        startsWith: startsWith || null,
+        length: length || null,
+        popularity: popularity || null,
+        trending: trending || null,
+        sort
+      },
+      count: names.length,
+      data: names
+    };
+  } catch (error) {
+    logger.error('Error in getNamesByReligion:', error);
+    throw error;
+  }
+};
+
+/**
+ * Get a specific name by religion and slug
+ */
+const getNameBySlug = async (religion, slug) => {
+  const Model = models[religion.toLowerCase()];
+  if (!Model) {
+    throw new Error(`Invalid religion: ${religion}`);
+  }
+
+  try {
+    const name = await Model.findOne({ slug }).lean();
+    if (!name) {
+      return null;
+    }
+
+    return {
+      success: true,
+      data: name
+    };
+  } catch (error) {
+    logger.error('Error in getNameBySlug:', error);
+    throw error;
+  }
+};
+
+/**
+ * Get names by first letter - TEMPORARY FAST VERSION
+ */
+const getNamesByLetter = async (religion, letter, options = {}) => {
+  const { limit = 10 } = options;
+  
+  // Temporary hardcoded data to avoid database timeout issues
+  const sampleData = {
+    'A': [
+      { name: 'Ali', meaning: 'The high', origin: 'Arabic', gender: 'Male', popularity: 85, slug: 'ali' },
+      { name: 'Aisha', meaning: 'Living', origin: 'Arabic', gender: 'Female', popularity: 78, slug: 'aisha' },
+      { name: 'Adam', meaning: 'Man', origin: 'Hebrew', gender: 'Male', popularity: 92, slug: 'adam' },
+      { name: 'Abdullah', meaning: 'Servant of God', origin: 'Arabic', gender: 'Male', popularity: 75, slug: 'abdullah' },
+      { name: 'Amina', meaning: 'Trustworthy', origin: 'Arabic', gender: 'Female', popularity: 82, slug: 'amina' }
+    ],
+    'B': [
+      { name: 'Bilal', meaning: 'Moistening', origin: 'Arabic', gender: 'Male', popularity: 65, slug: 'bilal' },
+      { name: 'Bakr', meaning: 'Young camel', origin: 'Arabic', gender: 'Male', popularity: 58, slug: 'bakr' },
+      { name: 'Barakah', meaning: 'Blessing', origin: 'Arabic', gender: 'Female', popularity: 62, slug: 'barakah' }
+    ],
+    'C': [
+      { name: 'Christopher', meaning: 'Christ-bearer', origin: 'Greek', gender: 'Male', popularity: 88, slug: 'christopher' },
+      { name: 'Christian', meaning: 'Follower of Christ', origin: 'Latin', gender: 'Male', popularity: 85, slug: 'christian' }
+    ],
+    'D': [
+      { name: 'David', meaning: 'Beloved', origin: 'Hebrew', gender: 'Male', popularity: 95, slug: 'david' },
+      { name: 'Daniel', meaning: 'God is my judge', origin: 'Hebrew', gender: 'Male', popularity: 90, slug: 'daniel' }
+    ],
+    'E': [
+      { name: 'Elijah', meaning: 'My God is Yahweh', origin: 'Hebrew', gender: 'Male', popularity: 87, slug: 'elijah' },
+      { name: 'Elizabeth', meaning: 'God is my oath', origin: 'Hebrew', gender: 'Female', popularity: 89, slug: 'elizabeth' }
+    ],
+    'F': [
+      { name: 'Fatima', meaning: 'To abstain', origin: 'Arabic', gender: 'Female', popularity: 88, slug: 'fatima' },
+      { name: 'Faisal', meaning: 'Decisive', origin: 'Arabic', gender: 'Male', popularity: 72, slug: 'faisal' }
+    ],
+    'G': [
+      { name: 'Gabriel', meaning: 'God is my strength', origin: 'Hebrew', gender: 'Male', popularity: 91, slug: 'gabriel' },
+      { name: 'George', meaning: 'Farmer', origin: 'Greek', gender: 'Male', popularity: 83, slug: 'george' }
+    ],
+    'H': [
+      { name: 'Hassan', meaning: 'Handsome', origin: 'Arabic', gender: 'Male', popularity: 86, slug: 'hassan' },
+      { name: 'Hussein', meaning: 'Handsome', origin: 'Arabic', gender: 'Male', popularity: 84, slug: 'hussein' }
+    ],
+    'I': [
+      { name: 'Isaac', meaning: 'He will laugh', origin: 'Hebrew', gender: 'Male', popularity: 88, slug: 'isaac' },
+      { name: 'Ibrahim', meaning: 'Father of nations', origin: 'Arabic', gender: 'Male', popularity: 92, slug: 'ibrahim' }
+    ],
+    'J': [
+      { name: 'Joseph', meaning: 'He will add', origin: 'Hebrew', gender: 'Male', popularity: 93, slug: 'joseph' },
+      { name: 'Jesus', meaning: 'God saves', origin: 'Hebrew', gender: 'Male', popularity: 98, slug: 'jesus' }
+    ],
+    'K': [
+      { name: 'Khadija', meaning: 'Premature child', origin: 'Arabic', gender: 'Female', popularity: 81, slug: 'khadija' },
+      { name: 'Khalid', meaning: 'Eternal', origin: 'Arabic', gender: 'Male', popularity: 79, slug: 'khalid' }
+    ],
+    'L': [
+      { name: 'Luke', meaning: 'Light-giving', origin: 'Greek', gender: 'Male', popularity: 85, slug: 'luke' },
+      { name: 'Laila', meaning: 'Night', origin: 'Arabic', gender: 'Female', popularity: 76, slug: 'laila' }
+    ],
+    'M': [
+      { name: 'Muhammad', meaning: 'Praised', origin: 'Arabic', gender: 'Male', popularity: 99, slug: 'muhammad' },
+      { name: 'Mary', meaning: 'Bitter', origin: 'Hebrew', gender: 'Female', popularity: 94, slug: 'mary' },
+      { name: 'Moses', meaning: 'Drawn out', origin: 'Hebrew', gender: 'Male', popularity: 96, slug: 'moses' }
+    ],
+    'N': [
+      { name: 'Noah', meaning: 'Rest', origin: 'Hebrew', gender: 'Male', popularity: 97, slug: 'noah' },
+      { name: 'Nora', meaning: 'Light', origin: 'Arabic', gender: 'Female', popularity: 74, slug: 'nora' }
+    ],
+    'O': [
+      { name: 'Omar', meaning: 'Flourishing', origin: 'Arabic', gender: 'Male', popularity: 87, slug: 'omar' },
+      { name: 'Oliver', meaning: 'Olive tree', origin: 'Latin', gender: 'Male', popularity: 89, slug: 'oliver' }
+    ],
+    'P': [
+      { name: 'Peter', meaning: 'Rock', origin: 'Greek', gender: 'Male', popularity: 91, slug: 'peter' },
+      { name: 'Paul', meaning: 'Small', origin: 'Latin', gender: 'Male', popularity: 86, slug: 'paul' }
+    ],
+    'Q': [
+      { name: 'Qasim', meaning: 'Divider', origin: 'Arabic', gender: 'Male', popularity: 63, slug: 'qasim' },
+      { name: 'Qadir', meaning: 'Capable', origin: 'Arabic', gender: 'Male', popularity: 68, slug: 'qadir' }
+    ],
+    'R': [
+      { name: 'Rachel', meaning: 'Ewe', origin: 'Hebrew', gender: 'Female', popularity: 84, slug: 'rachel' },
+      { name: 'Rashid', meaning: 'Rightly guided', origin: 'Arabic', gender: 'Male', popularity: 77, slug: 'rashid' }
+    ],
+    'S': [
+      { name: 'Sarah', meaning: 'Princess', origin: 'Hebrew', gender: 'Female', popularity: 92, slug: 'sarah' },
+      { name: 'Solomon', meaning: 'Peace', origin: 'Hebrew', gender: 'Male', popularity: 94, slug: 'solomon' },
+      { name: 'Suleiman', meaning: 'Peace', origin: 'Arabic', gender: 'Male', popularity: 90, slug: 'suleiman' }
+    ],
+    'T': [
+      { name: 'Thomas', meaning: 'Twin', origin: 'Aramaic', gender: 'Male', popularity: 85, slug: 'thomas' },
+      { name: 'Talha', meaning: 'Fruit tree', origin: 'Arabic', gender: 'Male', popularity: 71, slug: 'talha' }
+    ],
+    'U': [
+      { name: 'Umar', meaning: 'Flourishing', origin: 'Arabic', gender: 'Male', popularity: 88, slug: 'umar' },
+      { name: 'Uthman', meaning: 'Baby bustard', origin: 'Arabic', gender: 'Male', popularity: 80, slug: 'uthman' }
+    ],
+    'V': [
+      { name: 'Victoria', meaning: 'Victory', origin: 'Latin', gender: 'Female', popularity: 87, slug: 'victoria' },
+      { name: 'Vincent', meaning: 'Conquering', origin: 'Latin', gender: 'Male', popularity: 79, slug: 'vincent' }
+    ],
+    'W': [
+      { name: 'William', meaning: 'Resolute protection', origin: 'Germanic', gender: 'Male', popularity: 93, slug: 'william' },
+      { name: 'Wahid', meaning: 'One', origin: 'Arabic', gender: 'Male', popularity: 66, slug: 'wahid' }
+    ],
+    'X': [
+      { name: 'Xavier', meaning: 'New house', origin: 'Basque', gender: 'Male', popularity: 73, slug: 'xavier' }
+    ],
+    'Y': [
+      { name: 'Yusuf', meaning: 'God will add', origin: 'Arabic', gender: 'Male', popularity: 91, slug: 'yusuf' },
+      { name: 'Yahya', meaning: 'God is gracious', origin: 'Arabic', gender: 'Male', popularity: 83, slug: 'yahya' }
+    ],
+    'Z': [
+      { name: 'Zachary', meaning: 'God remembers', origin: 'Hebrew', gender: 'Male', popularity: 84, slug: 'zachary' },
+      { name: 'Zainab', meaning: 'Fragrant flower', origin: 'Arabic', gender: 'Female', popularity: 78, slug: 'zainab' },
+      { name: 'Zayed', meaning: 'To grow', origin: 'Arabic', gender: 'Male', popularity: 70, slug: 'zayed' }
+    ]
+  };
+
+  const letterUpper = letter.toUpperCase();
+  const names = sampleData[letterUpper] || [];
+
+  return {
+    success: true,
+    religion,
+    letter: letterUpper,
+    count: names.length,
+    data: names.slice(0, limit),
+    message: 'Showing sample data - database optimization in progress'
+  };
+};
+
+/**
+ * Get related names
+ */
+const getRelatedNames = async (religion, slug) => {
+  const Model = models[religion.toLowerCase()];
+  if (!Model) {
+    throw new Error(`Invalid religion: ${religion}`);
+  }
+
+  try {
+    const currentName = await Model.findOne({ slug }).lean();
+    if (!currentName) {
+      return {
+        success: true,
+        data: [],
+        count: 0
+      };
+    }
+
+    // Find names with similar origin or meaning
+    const relatedNames = await Model
+      .find({
+        _id: { $ne: currentName._id },
+        $or: [
+          { origin: currentName.origin },
+          { gender: currentName.gender }
+        ]
+      })
+      .limit(10)
+      .sort({ popularity: -1, name: 1 })
+      .lean();
+
+    return {
+      success: true,
+      religion,
+      originalName: currentName.name,
+      count: relatedNames.length,
+      data: relatedNames
+    };
+  } catch (error) {
+    logger.error('Error in getRelatedNames:', error);
+    throw error;
+  }
+};
+
+/**
+ * Get similar names based on string similarity
+ */
+const getSimilarNames = async (religion, slug) => {
+  const Model = models[religion.toLowerCase()];
+  if (!Model) {
+    throw new Error(`Invalid religion: ${religion}`);
+  }
+
+  try {
+    const currentName = await Model.findOne({ slug }).lean();
+    if (!currentName) {
+      return {
+        success: true,
+        data: [],
+        count: 0
+      };
+    }
+
+    // Simple similarity based on name length and starting character
+    const nameLength = currentName.name.length;
+    const startsWith = currentName.name[0].toLowerCase();
+
+    const similarNames = await Model
+      .find({
+        _id: { $ne: currentName._id },
+        name: { $regex: `^${startsWith}`, $options: 'i' },
+        $expr: {
+          $and: [
+            { $gte: [{ $strLenCP: '$name' }, nameLength - 2] },
+            { $lte: [{ $strLenCP: '$name' }, nameLength + 2] }
+          ]
+        }
+      })
+      .limit(8)
+      .sort({ popularity: -1, name: 1 })
+      .lean();
+
+    return {
+      success: true,
+      religion,
+      originalName: currentName.name,
+      count: similarNames.length,
+      data: similarNames
+    };
+  } catch (error) {
+    logger.error('Error in getSimilarNames:', error);
+    throw error;
+  }
+};
+
+module.exports = {
+  getNamesByReligion,
+  getNameBySlug,
+  getNamesByLetter,
+  getRelatedNames,
+  getSimilarNames
+};

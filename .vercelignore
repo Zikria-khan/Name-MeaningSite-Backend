@@ -1,0 +1,32 @@
+# Development files
+node_modules
+.env.local
+.env.development
+*.log
+logs
+
+# Test files
+test-*.js
+__tests__
+*.test.js
+*.spec.js
+
+# Documentation
+*.md
+!README.md
+
+# Archive and temp files
+_archive
+processed_names
+.cache
+.temp
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Git
+.git
+.gitignore

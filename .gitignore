@@ -1,0 +1,38 @@
+# =====================================================
+# Nameverse Project Git Ignore
+# =====================================================
+
+# 1️⃣ Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# 2️⃣ Node modules
+node_modules/
+
+# 3️⃣ Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 4️⃣ Build / Cache
+.next/
+out/
+dist/
+.vscode/
+.vercel/
+.cache/
+
+# 5️⃣ Large processed files
+.env
+
+backend/processed_christian_names*.json
+backend/processed_names*.json
+backend/wikimedia_images_cleaned.jsonl
+backend/translated_stories_hindi.json
+backend/stories_only_hindi.json
+backend/raw_predibase_logs.json
+
+
