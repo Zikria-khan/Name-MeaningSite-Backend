@@ -1,1 +1,10 @@
-*.json filter=lfs diff=lfs merge=lfs -text
+# Exclude critical config files from LFS
+package.json -filter -diff -merge -text
+vercel.json -filter -diff -merge -text
+tsconfig.json -filter -diff -merge -text
+.eslintrc.json -filter -diff -merge -text
+
+# Track only large data files with LFS
+all-islamic-names.json filter=lfs diff=lfs merge=lfs -text
+sample-names.json filter=lfs diff=lfs merge=lfs -text
+*.lfs.json filter=lfs diff=lfs merge=lfs -text
