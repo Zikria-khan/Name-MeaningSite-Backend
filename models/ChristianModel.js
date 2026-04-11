@@ -131,6 +131,20 @@ const christianNameSchema = new mongoose.Schema({
 
   spiritual_symbolism: String,
 
+  // ✅ New fields for E-A-T and SEO
+  sources: [{
+    url: { type: String },
+    title: { type: String },
+    description: { type: String },
+    _id: false
+  }],
+  seo_meta: {
+    title: { type: String },
+    description: { type: String },
+    keywords: [String]
+  },
+  last_reviewed: { type: Date },
+
   seo: mongoose.Schema.Types.Mixed,
   share_options: mongoose.Schema.Types.Mixed,
   monetization: mongoose.Schema.Types.Mixed,

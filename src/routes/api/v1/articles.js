@@ -195,27 +195,6 @@ router.get('/:slug', (req, res, next) => {
   }
 });
 
-module.exports = router;
-    const { q, page = 1, limit = 10 } = req.query;
-
-    if (!q || q.trim().length < 2) {
-      return res.status(400).json({
-        success: false,
-        error: 'Search query must be at least 2 characters'
-      });
-    }
-
-    const result = await articlesController.searchArticles(q, {
-      page: parseInt(page) || 1,
-      limit: Math.min(parseInt(limit) || 10, 50)
-    });
-
-    res.json(result);
-  } catch (error) {
-    next(error);
-  }
-});
-
 /**
  * @route   GET /api/v1/articles/:slug
  * @desc    Get single article by slug

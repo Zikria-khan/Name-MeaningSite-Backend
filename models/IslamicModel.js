@@ -153,6 +153,20 @@ const islamicNameSchema = new mongoose.Schema({
   ],
 
   spiritual_symbolism: String,
+
+  // ✅ New fields for E-A-T and SEO
+  sources: [{
+    url: { type: String },
+    title: { type: String },
+    description: { type: String },
+    _id: false
+  }],
+  seo_meta: {
+    title: { type: String },
+    description: { type: String },
+    keywords: [String]
+  },
+  last_reviewed: { type: Date },
   
   created_at: String,
   updated_at: String
