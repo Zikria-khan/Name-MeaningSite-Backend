@@ -164,7 +164,12 @@ const getNameBySlug = async (religion, slug) => {
   }
 
   try {
-    const name = await Model.findOne({ slug }).lean();
+    // ✅ FIX: Multi method slug lookup, case insensitive
+    let name = await Model.findOne({ slug: slug.toLowerCase() }).lean();
+    if (!name) name = await Model.findOne({ slug }).lean();
+    if (!name) name = await Model.findOne({ slug: new RegExp(`^${slug}$`, 'i') }).lean();
+    if (!name) name = await Model.findOne({ name: new RegExp(`^${slug}$`, 'i') }).lean();
+    
     if (!name) {
       return null;
     }

@@ -14,12 +14,13 @@ async function ensureDBConnection() {
     dbConnectPromise = connectDB().catch((error) => {
       console.error('MongoDB connection failed:', error);
       dbConnectPromise = null;
-      throw error;
+      return null;
     });
   }
   return dbConnectPromise;
 }
 
-ensureDBConnection();
-
-module.exports = app;
+module.exports = async (req, res) => {
+  await ensureDBConnection();
+  return app(req, res);
+};
