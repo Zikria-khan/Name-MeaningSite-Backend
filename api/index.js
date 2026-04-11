@@ -46,13 +46,17 @@ app.use((req, res) => {
 
 app.use(errorHandler);
 
-connectDB()
-  .then(() => {
-    app.listen(port, () => {
-      console.log(`Nameverse API running on port ${port}`);
+module.exports = app;
+
+if (require.main === module) {
+  connectDB()
+    .then(() => {
+      app.listen(port, () => {
+        console.log(`Nameverse API running on port ${port}`);
+      });
+    })
+    .catch((error) => {
+      console.error('Failed to connect to MongoDB:', error.message);
+      process.exit(1);
     });
-  })
-  .catch((error) => {
-    console.error('Failed to connect to MongoDB:', error.message);
-    process.exit(1);
-  });
+}
