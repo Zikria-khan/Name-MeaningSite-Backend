@@ -2,11 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 // Import route modules
-const healthRoutes = require('./health');
 const namesRoutes = require('./names');
 
 // Mount routes
-router.use('/health', healthRoutes);
 router.use('/names', namesRoutes);
 
 // API v1 root endpoint
