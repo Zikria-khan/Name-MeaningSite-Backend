@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:190262f1155ec86cbb06183a5b8485dd305dc0d9304f11063cb526165298c106
-size 681
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs24.x",
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js",
+      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"]
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, s-maxage=86400, stale-while-revalidate=2592000" },
+        { "key": "CDN-Cache-Control", "value": "public, s-maxage=86400" },
+        { "key": "Vercel-CDN-Cache-Control", "value": "public, s-maxage=86400" }
+      ]
+    },
+    {
+      "source": "/api/v1/names(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, s-maxage=172800, stale-while-revalidate=2592000" }
+      ]
+    }
+  ]
+}
