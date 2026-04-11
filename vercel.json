@@ -1,33 +1,3 @@
-{
-  "version": 2,
-  "functions": {
-    "api/index.js": {
-      "runtime": "nodejs24.x",
-      "maxDuration": 30,
-      "memory": 1024
-    }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.js",
-      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"]
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, s-maxage=86400, stale-while-revalidate=2592000" },
-        { "key": "CDN-Cache-Control", "value": "public, s-maxage=86400" },
-        { "key": "Vercel-CDN-Cache-Control", "value": "public, s-maxage=86400" }
-      ]
-    },
-    {
-      "source": "/api/v1/names(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, s-maxage=172800, stale-while-revalidate=2592000" }
-      ]
-    }
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a3871edb557b7d9ec505b76faae421e83c5b7dd0bfe5e1f13511e91cb283eb6
+size 565
