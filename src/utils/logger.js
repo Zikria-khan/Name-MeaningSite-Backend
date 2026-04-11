@@ -26,6 +26,18 @@ const logFormat = printf(({ level, message, timestamp, ...meta }) => {
   }`;
 });
 
+const transports = [new winston.transports.Console()];
+
+const isServerless = !!process.env.VERCEL;
+const isLocal = process.env.NODE_ENV !== 'production' && !isServerless;
+
+if (isLocal) {
+  transports.push(
+    new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
+    new winston.transports.File({ filename: 'logs/combined.log' })
+  );
+}
+
 const logger = winston.createLogger({
   level: process.env.LOG_LEVEL || 'info',
   levels: logLevels.levels,
@@ -37,16 +49,7 @@ const logger = winston.createLogger({
     align(),
     logFormat
   ),
-  transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({ 
-      filename: 'logs/error.log', 
-      level: 'error' 
-    }),
-    new winston.transports.File({ 
-      filename: 'logs/combined.log' 
-    })
-  ],
+  transports,
 });
 
 // Create a stream object with a 'write' function that will be used by `morgan`
