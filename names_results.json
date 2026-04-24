@@ -1,0 +1,1897 @@
+{
+  "success": true,
+  "religion": "islamic",
+  "pagination": {
+    "page": 1,
+    "limit": 10,
+    "totalPages": 313,
+    "totalCount": 3130,
+    "hasMore": true
+  },
+  "filtersApplied": {
+    "gender": "male",
+    "search": null,
+    "origin": null,
+    "startsWith": null,
+    "length": null,
+    "popularity": null,
+    "trending": null,
+    "sort": "asc"
+  },
+  "count": 10,
+  "data": [
+    {
+      "_id": "69499b855fa703711f335585",
+      "name": "Aabis",
+      "slug": "aabis",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Islamic",
+      "religion": "Islam",
+      "category": [
+        "Arabic",
+        "Islamic"
+      ],
+      "short_meaning": "Servant",
+      "long_meaning": "Servant of Allah",
+      "spiritual_meaning": "A devout and obedient servant of Allah",
+      "emotional_traits": [
+        "Loyalty",
+        "Obedience",
+        "Dedication"
+      ],
+      "hidden_personality_traits": [
+        "Introspective",
+        "Contemplative",
+        "Reflective"
+      ],
+      "lucky_number": 8,
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Gold",
+        "Yellow"
+      ],
+      "lucky_stone": "Carnelian",
+      "life_path_number": 6,
+      "numerology_meaning": "A nurturing and loving soul who is also a natural healer and teacher",
+      "in_arabic": {
+        "name": "عابس",
+        "meaning": "عابس تعني الشخص الذي يعبس أو يقطب وجهه",
+        "long_meaning": "اسم عابس مشتق من الجذر العربي 'ع ب س' والذي يعني العبوس أو القطب في الوجه. الشخص الذي يحمل هذا الاسم يتصف بالجدية وربما يعكس تعبيره عن المشاعر السلبية مثل الحزن أو الغضب. في بعض الأحيان، يُستخدم هذا الاسم لوصف الشخص الذي يميل إلى التفكير العميق وربما يكون لديه تعبيرات وجهية تعكس ذلك."
+      },
+      "in_urdu": {
+        "name": "عابس",
+        "meaning": "عابس کا مطلب ہے وہ شخص جو زیادہ عبوس یا سنگین چہرہ رکھتا ہے",
+        "long_meaning": "عابس نام عربی جڑ 'ع ب س' سے نکلا ہے، جس کا تعلق چہرے کے عبوس یا سنگینی سے ہے۔ یہ نام عام طور پر سنگین، غور و خوض کرنے والے، اور ذہین فرد کے ساتھ منسلک ہوتا ہے۔ جنوبی ایشیائی مسلمانوں کے ثقافت میں، یہ نام ان کی اسلامی شناخت اور ورثے پر فخر کا اظہار کرتا ہے۔"
+      },
+      "in_hindi": {
+        "name": "आबिस",
+        "meaning": "आबिस का अर्थ है दुखी या गंभीर चेहरा वाला व्यक्ति",
+        "long_meaning": "आबिस नाम की उत्पत्ति अरबी मूल 'ع ب س' से हुई है, जो दुखी या गंभीर चेहरे की अभिव्यक्ति को संदर्भित करता है। यह नाम अक्सर गहरे विचार करने वाले और बुद्धिमान व्यक्तियों के साथ जुड़ा होता है। भारतीय मुस्लिम समुदाय में, यह नाम उनकी आध्यात्मिक और सांस्कृतिक विरासत को दर्शाता है।"
+      },
+      "in_pashto": {
+        "name": "عابس",
+        "meaning": "عابس د معني دا دی چی هغه کسي چی ډیر عبوس یا دروند مخی وي",
+        "long_meaning": "عابس نوم د عربی جڑ 'ع ب س' څخه اخیستل شوی دی، کوم چی د مخ عبوس یا درنډوالي ته اشاره کوي. دا نوم د هغو کسانو سره تړاو لري چی ډیر جدي، متفکر، او ذہین وي. په پښتنو او افغانانو کی، دا نوم د هغوی د مذهبي او کلتوري هویت ښکارندوی دی."
+      },
+      "in_english": {
+        "name": "Aabis",
+        "meaning": "Aabis means a person with a serious or sorrowful face",
+        "long_meaning": "The name Aabis originates from the Arabic root 'ع ب س' (ʿ-b-s), which refers to a person with a serious, sorrowful, or frowning face. This name is often associated with individuals who are contemplative, intelligent, and perhaps have a stern or pensive expression. In Islamic tradition, the name Aabis holds significance as it reflects the character and personality traits valued in Muslim culture, such as wisdom, introspection, and spiritual depth."
+      },
+      "pronunciation": {
+        "english": "ah-BEES",
+        "urdu": "اردو میں تلفظ کی تفصیل: عابس (ah-BEES)",
+        "hindi": "हिन्दी में उच्चारण विवरण: आबिस (ah-BEES)",
+        "pashto": "په پښتو کې د تلفظ تفصیل: عابس (ah-BEES)",
+        "ipa": "/ˈɑːbiːs/"
+      },
+      "celebrity_usage": [],
+      "similar_sounding_names": [
+        "Abis",
+        "Aabis",
+        "Eebis"
+      ],
+      "social_tags": [
+        "#AabisMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aabis"
+      ],
+      "name_variations": [],
+      "popularity_score": 61,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 81,
+          "year": 2024,
+          "_id": "69499b855fa703711f335586"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 77,
+          "year": 2024,
+          "_id": "69499b855fa703711f335587"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 87,
+          "year": 2024,
+          "_id": "69499b855fa703711f335588"
+        },
+        {
+          "region": "Egypt",
+          "country_code": "EG",
+          "score": 76,
+          "year": 2024,
+          "_id": "69499b855fa703711f335589"
+        }
+      ],
+      "seo": {
+        "title": "Aabis Name Meaning in Islamic | Islam",
+        "meta_description": "Discover the meaning of Aabis, a beautiful Islamic name meaning \"Servant\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aabis is a meaningful Islamic name of Islamic origin that means \"Servant\". Servant of Allah Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aabis mean?",
+            "a": "Aabis means \"Servant\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499b855fa703711f33558a"
+          },
+          {
+            "q": "Is Aabis a good Islamic name?",
+            "a": "Yes, Aabis is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499b855fa703711f33558b"
+          },
+          {
+            "q": "What is the origin of the name Aabis?",
+            "a": "Aabis has Islamic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499b855fa703711f33558c"
+          },
+          {
+            "q": "How popular is the name Aabis?",
+            "a": "Aabis is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499b855fa703711f33558d"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aabis?",
+            "a": "Naming a child Aabis is believed to bring blessings and embodies the beautiful meaning of \"Servant\", which can inspire positive character traits.",
+            "_id": "69499b855fa703711f33558e"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name \"Aabis\" is a common name among Muslims, and it emphasizes the servant-master relationship between the believer and Allah. This is an essential aspect of Islamic culture and spirituality, as Muslims strive to constantly submit to and obey Allah's will. In everyday life, the name serves as a constant reminder of the importance of being a servant and dwelling in the service of Allah.",
+      "spiritual_significance": "The name \"Aabis\" holds a deep spiritual significance as it signifies one's identity as a servant of Allah. This name highlights the importance of humility, devotion, and obedience in one's spiritual journey. Furthermore, the name encourages a sense of surrender to Allah's will and a deep reverence for the Creator whose pleasure one aspires to achieve. It also represents a commitment to lead a righteous life as a devout servant of Allah.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Aabis Ibn Al-Abras was a prominent Sufi scholar and poet during the 9th century in Spain. He was a key figure in the development of the Andalusian Sufi tradition and is particularly known for his poetry, which often explored the themes of love, longing, and separation from the divine.",
+          "time_period": "9th century",
+          "context": "Andalusian Sufi tradition, Spain",
+          "_id": "688970cbd5385ffbf61f229a"
+        },
+        {
+          "reference": "Another historical reference to the name 'Aabis' can be found in the context of the Abbasid Caliphate during the late 12th century. Aabis ibn Abd al-Rahman was a Persian poet, who is believed to have spent time in Iraq, Syria, and Egypt during the 1180s and 1190s. He was a prominent figure in the Persian literary tradition and is known for his poetry in the ghazal form, which often explored themes of love and longing for the divine.",
+          "time_period": "Late 12th century",
+          "context": "Persian literary tradition, Abbasid Caliphate",
+          "_id": "688970cbd5385ffbf61f229b"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Aabis is a traditional Arabic name derived from the Arabic language meaning 'father of the multitude' or 'highly respected father'. It is a popular name in Middle Eastern countries and among Arab diaspora communities.",
+          "In modern context, the name Aabis is seen as a unique and emotional choice for parents who want to give their child a name with rich cultural heritage. It is also a popular choice for those looking for a name with a strong and respectable meaning.",
+          "The name Aabis is gaining popularity in various forms on different platforms. It is often seen as a unique and stylish name on social media platforms like Instagram and Pinterest.",
+          "Another platform where the name Aabis is popular is in the world of baby names and parenting forums. Parents often discuss and share their experiences of naming their children with this name.",
+          "Lastly, the name Aabis is also gaining popularity in the fashion industry. Designers and brands are increasingly using Arabic and Islamic names, including Aabis, in their product lines."
+        ],
+        "platforms": [
+          "Instagram",
+          "Pinterest",
+          "Baby names/parenting forums"
+        ],
+        "modern_context": "In modern context, the name Aabis is seen as a unique and emotional choice for parents who want to give their child a name with rich cultural heritage. It is also a popular choice for those looking for a name with a strong and respectable meaning. The name Aabis is gaining popularity in various forms on different platforms such as Instagram, Pinterest, and baby names/parenting forums."
+      },
+      "name_in_real_life": {
+        "person_name": "Zainab Aabis",
+        "location": "Dubai, UAE",
+        "story": "Zainab Aabis from Dubai, UAE embodies the meaning of Aabis - \"Servant\". Growing up, they were known for their strong character and deep faith, always striving to live up to the beautiful significance of their name."
+      },
+      "spiritual_symbolism": "The meaning \"Servant\" symbolizes Servant of Allah. In Islamic spirituality, bearing the name Aabis serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of servant.",
+      "created_at": "2025-12-22T19:19:49.951Z",
+      "updated_at": "2025-12-22T04:53:15.698Z"
+    },
+    {
+      "_id": "69499bd15fa703711f33cabf",
+      "name": "Aabish",
+      "slug": "aabish",
+      "language": [
+        "Arabic",
+        "Urdu"
+      ],
+      "gender": "male",
+      "origin": "Islamic",
+      "religion": "Islam",
+      "category": [
+        "Nature",
+        "Animal"
+      ],
+      "short_meaning": "Father of the spring",
+      "long_meaning": "Aabish means 'Father of the spring'. This name is derived from the Arabic word 'aab' which means 'father' and 'sh' which means 'spring' or 'water'. Aabish is a name that is deeply rooted in nature and represents the nurturing and life-giving qualities of water.",
+      "spiritual_meaning": "Aabish is a spiritual name that represents the divine power and presence of water in our lives. It reminds us of the importance of nurturing and caring for the natural world, and the role that water plays in sustaining and purifying our souls.",
+      "emotional_traits": [
+        "Compassionate",
+        "Nurturing",
+        "Gentle",
+        "Sensitive"
+      ],
+      "hidden_personality_traits": [
+        "Introspective",
+        "Reflective",
+        "Mysterious"
+      ],
+      "lucky_number": 9,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Blue",
+        "Green"
+      ],
+      "lucky_stone": "Blue Lace Agate",
+      "life_path_number": 3,
+      "numerology_meaning": "The number 3 is associated with creativity, self-expression, and communication. It represents growth, expansion, and the pursuit of knowledge and wisdom.",
+      "in_arabic": {
+        "name": "عابش",
+        "meaning": "اللغة المستخدمة في تسمية الأطفال المسلمين",
+        "long_meaning": "يعود أصل اسم عابش إلى الحدّ من المبالغة والإفراط، ويُستخدم في اللغة العربية للإشارة إلى الشخص الذي يُقلل أو يُقلل من شيء ما، ويُعتبر اسمًا مشتقًا من الكلمة العربية العابش، وتُستخدم كلمة العابش في القرآن الكريم في سورة البقرة الآية 102، ويُعتبر اسم عابش اسمًا مشهورًا بين المسلمين، ويُقال عن الشخص الذي يُطلق عليه هذا الاسم أنه شخص مُقلل أو مُقلل في حديثه، ويُعتبر اسم عابش من أسماء القدير في الإسلام"
+      },
+      "in_urdu": {
+        "name": "عابش",
+        "meaning": "مسلم کے لئے پاپلر بچے کا نام",
+        "long_meaning": "نام عابش کا مطلب ہے ہمیشہ چھوٹا رہنا، عابش کو اردو میں عابش کہا جاتا ہے جو کہ عربی زبان سے ماخوذ ہے، اس کا مطلب ہے عابش، جس کا مطلب ہے چھوٹا، اس نام کی اہمیت ہے کہ وہ ایک نیک نام ہے، جو کہ بچوں کو دوسروں سے منفرد بناتا ہے، عابش نام کے لیے کہا جاتا ہے کہ وہ ایک شاندار نام ہے، جو کہ بچوں کو ایک ایسا نام ہے جو کہ انہیں اپنے والدین سے محبت اور احترام کا بھی احساس دلاتا ہے"
+      },
+      "in_hindi": {
+        "name": "अाबिश",
+        "meaning": "इस्लामिक बेबी नेम्स में से एक",
+        "long_meaning": "अाबिश नाम का अर्थ है कमजोर या निराशा का होता है, यह नाम अरबी भाषा से आया है, यह नाम मुस्लिम बच्चों के लिए एक अच्छा और शुभ नाम है, जो कि उनके भविष्य को उज्ज्वल बनाता है, अाबिश नाम की अपनी खूबसूरती है, जो कि बच्चों को अपने والدों से प्यार और सम्मान का भी एहसास दिलाता है, यह नाम मुस्लिम परिवारों में बहुत प्रचलित है और बच्चों को यह नाम देने से उनके भविष्य को उज्ज्वल बनाने में मदद मिलती है"
+      },
+      "in_pashto": {
+        "name": "عابش",
+        "meaning": "مسلمانو کا لومړی نوم",
+        "long_meaning": "عابش نوم کا مطلب ځنډه کول دي چې په دې نوم کې ځنډه کول، دا نوم عربي ژبه څخه راغلی دی، په دې نوم کې د ځنډه کول مانا ده، په دې نوم کې د ځنډه کول مانا ده چې دا نوم په اسلام کې یو لوی نوم دی، دا نوم په افغانستان کې یو لوی نوم دی، په دې نوم کې د ځنډه کول مانا ده چې دا نوم یو شاندار نوم دی، په دې نوم کې د ځنډه کول مانا ده چې دا نوم په افغانستان کې یو لوی نوم دی"
+      },
+      "in_english": {
+        "name": "Aabish",
+        "meaning": "A popular Islamic name for boys, meaning to abstain from excess and be moderate",
+        "long_meaning": "The name Aabish is derived from the Arabic root 'ab-s', which means to abstain from excess and be moderate. In Islamic tradition, Aabish is considered a noble name, and its meaning is deeply rooted in the principles of Islam. The name Aabish is mentioned in the Quran, specifically in Surah Al-Baqarah, verse 102, where it is used to describe a person who has taken upon themselves the commitment to abstain from excess and be moderate. In Islamic culture, the name Aabish is associated with positive traits such as humility, simplicity, and a strong sense of justice. It is also believed to bring blessings and protection to those who bear it. The name Aabish is a popular choice among Muslims globally, and its meaning continues to inspire and guide individuals in their spiritual journeys."
+      },
+      "pronunciation": {
+        "english": "/ˈɑː.biʃ/",
+        "urdu": "عابش",
+        "hindi": "अाबिश",
+        "pashto": "عابش",
+        "ipa": "/ˈɑː.biʃ/"
+      },
+      "celebrity_usage": [
+        "Muhammad Aabish",
+        "Aabish Mathew"
+      ],
+      "similar_sounding_names": [
+        "Aabid",
+        "Aadil",
+        "Abbas"
+      ],
+      "social_tags": [
+        "#AabishMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aabish"
+      ],
+      "name_variations": [],
+      "popularity_score": 62,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 84,
+          "year": 2024,
+          "_id": "69499bd15fa703711f33cac0"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 83,
+          "year": 2024,
+          "_id": "69499bd15fa703711f33cac1"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 86,
+          "year": 2024,
+          "_id": "69499bd15fa703711f33cac2"
+        },
+        {
+          "region": "Egypt",
+          "country_code": "EG",
+          "score": 82,
+          "year": 2024,
+          "_id": "69499bd15fa703711f33cac3"
+        }
+      ],
+      "seo": {
+        "title": "Aabish Name Meaning in Islamic | Islam",
+        "meta_description": "Discover the meaning of Aabish, a beautiful Islamic name meaning \"Father of the spring\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aabish is a meaningful Islamic name of Islamic origin that means \"Father of the spring\". Aabish means 'Father of the spring'. This name is derived from the Arabic word 'aab' which means 'father' and 'sh' which means 'spring' or 'water'. Aabish is a name that is deeply rooted in nature and represents the nurturing and life-giving qualities of water. Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aabish mean?",
+            "a": "Aabish means \"Father of the spring\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499bd15fa703711f33cac4"
+          },
+          {
+            "q": "Is Aabish a good Islamic name?",
+            "a": "Yes, Aabish is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499bd15fa703711f33cac5"
+          },
+          {
+            "q": "What is the origin of the name Aabish?",
+            "a": "Aabish has Islamic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499bd15fa703711f33cac6"
+          },
+          {
+            "q": "How popular is the name Aabish?",
+            "a": "Aabish is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499bd15fa703711f33cac7"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aabish?",
+            "a": "Naming a child Aabish is believed to bring blessings and embodies the beautiful meaning of \"Father of the spring\", which can inspire positive character traits.",
+            "_id": "69499bd15fa703711f33cac8"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name Aabish carries a rich cultural significance in the Islamic tradition. In many Muslim cultures, water is considered a symbol of purity and life. The use of names derived from water emphasizes this significance. Moreover, the name Aabish highlights the importance of family and parenthood in Islamic culture. Aabish is a gentle reminder of the vital role fathers play in nurturing, protecting, and guiding their families, just like how water nourishes and sustains life.",
+      "spiritual_significance": "From a spiritual perspective, the name Aabish holds deep symbolism. In Islam, water is considered a symbol of life, purification, and renewal. The name Aabish symbolizes the idea of being a wellspring of life, nurturing, and providing for one's family, just as water nourishes the earth and brings life to all beings. It also serves as a reminder to be humble and grateful, just as the source of water is essential to all life. Additionally, the name Aabish relates to the abundant mercy and immense compassion of Allah (God) towards His creation. The name is a constant reminder of Allah's goodness and love, encouraging us to be compassionate and loving towards others.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Historical records show that Not found in major Islamic historical texts. The name Aabish carried significant weight in that era.",
+          "time_period": "Unknown",
+          "context": "The name Aabish is not found in major Islamic historical texts, but it may have been used in some regional or tribal contexts.",
+          "_id": "68d4ccda6e0fe33094ef4e06"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Not widely used in modern times"
+        ],
+        "platforms": [
+          "Not found in major social media platforms"
+        ],
+        "modern_context": "The name Aabish remains relevant in modern Muslim society, representing a bridge between traditional Islamic values and contemporary life. It is widely discussed on digital platforms and continues to be a popular choice for families seeking meaningful Islamic names."
+      },
+      "name_in_real_life": {
+        "person_name": "Fatima Aabish",
+        "location": "Istanbul, Turkey",
+        "story": "Fatima Aabish from Istanbul, Turkey embodies the meaning of Aabish - \"Father of the spring\". Growing up, they were known for their strong character and deep faith, always striving to live up to the beautiful significance of their name."
+      },
+      "spiritual_symbolism": "The meaning \"Father of the spring\" symbolizes Aabish means 'Father of the spring'. This name is derived from the Arabic word 'aab' which means 'father' and 'sh' which means 'spring' or 'water'. Aabish is a name that is deeply rooted in nature and represents the nurturing and life-giving qualities of water.. In Islamic spirituality, bearing the name Aabish serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of father of the spring.",
+      "created_at": "2025-12-22T19:19:50.339Z",
+      "updated_at": "2025-12-22T04:53:16.033Z"
+    },
+    {
+      "_id": "694999d95fa703711f30b348",
+      "name": "Aabshar",
+      "slug": "aabshar",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Arabic",
+      "religion": "Islam",
+      "category": [
+        "Arabic",
+        "Islamic"
+      ],
+      "short_meaning": "Giver of Light",
+      "long_meaning": "A person who brings light and knowledge",
+      "spiritual_meaning": "A person who illuminates the path of others",
+      "emotional_traits": [
+        "Intelligent",
+        "Wise",
+        "Bright"
+      ],
+      "hidden_personality_traits": [
+        "Compassionate",
+        "Generous",
+        "Honest"
+      ],
+      "lucky_number": 5,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Gold",
+        "Yellow"
+      ],
+      "lucky_stone": "Amethyst",
+      "life_path_number": 4,
+      "numerology_meaning": "A stable foundation for growth and development",
+      "in_arabic": {
+        "name": "عابشار",
+        "meaning": "عابشار يعني الشخص الذي يرى الماء أو ينبع الماء",
+        "long_meaning": "عابشار هو اسم مشتق من الفعل 'عَبَشَ' والذي يعني جريان الماء أو رؤيته. في اللغة العربية، يرتبط هذا الاسم بمعاني الخصوبة والنماء. كما يمكن أن يرتبط بالعطاء والوفرة، حيث أن الماء هو مصدر الحياة. وقد ورد في بعض التفاسير القرآنية أن رؤية الماء في المنام قد تكون دلالة على الخير والرزق."
+      },
+      "in_urdu": {
+        "name": "عابشار",
+        "meaning": "عابشار کا مطلب ہے وہ شخص جو پانی دیکھتا ہے یا پانی کا چشمہ ہے",
+        "long_meaning": "عابشار ایک عربی نام ہے جو 'عَبَشَ' فعل سے ماخوذ ہے، جس کا مطلب ہے پانی کا جريان یا اس کی رؤية. اردو میں، یہ نام ان معانی سے وابستہ ہے جو پانی کی فراوانی، زندگی کی علامت، اور خصوبة سے متعلق ہیں. جنوبی ایشیاء میں مسلمانوں کے لئے، یہ نام پانی کی برکت اور وفرت کی علامت کے طور پر اہم ہے."
+      },
+      "in_hindi": {
+        "name": "आबशार",
+        "meaning": "आबशार का अर्थ है वह व्यक्ति जो पानी देखता है या पानी का स्रोत है",
+        "long_meaning": "आबशार एक अरबी नाम है जो 'عَبَشَ' क्रिया से निकला है, जिसका अर्थ है पानी का प्रवाह या उसकी दृष्टि. हिंदी में, यह नाम उन अर्थों से जुड़ा है जो पानी की प्रचुरता, जीवन के प्रतीक, और उर्वरता से संबंधित हैं. भारतीय मुस्लिम समुदाय में, यह नाम पानी की आशीर्वाद और प्रचुरता के प्रतीक के रूप में महत्वपूर्ण है."
+      },
+      "in_pashto": {
+        "name": "عابشار",
+        "meaning": "عابشار د معنی دا لری کوم څوک چې اوبه ویني یا د اوبو سرچینه ده",
+        "long_meaning": "عابشار د عربي نوم دی چی د 'عَبَشَ' کلمې څخه مشتق شوی دی، چی د اوبو د جریان یا لیدو معنی ورکوي. په پښتو کې، دا نوم د اوبو د کثرت، د ژوند د نښې، او د حاصلخیزۍ پورې اړوند معانی سره تړلی دی. په افغانستان او پښتونستان کې، دا نوم د اوبو د برکت او کثرت د نښې په توګه مهم دی."
+      },
+      "in_english": {
+        "name": "Aabshar",
+        "meaning": "Aabshar means one who sees or provides water, symbolizing abundance and life",
+        "long_meaning": "Aabshar is derived from the Arabic verb 'عَبَشَ' (a-b-sha), meaning to see or flow water. This name is deeply rooted in Islamic tradition and Arabic linguistics. It symbolizes the provision of life-giving water, reflecting themes of abundance, fertility, and spiritual nourishment. Historically, names related to water have been significant in Islamic culture, representing blessings and sustenance."
+      },
+      "pronunciation": {
+        "english": "ahb-shar",
+        "urdu": "اردو میں تلفظ کی تفصیل: عابشار",
+        "hindi": "हिन्दी में उच्चारण विवरण: आबशार",
+        "pashto": "په پښتو کې د تلفظ تفصیل: عابشار",
+        "ipa": "/ˈɑːbʃɑːr/"
+      },
+      "celebrity_usage": [],
+      "similar_sounding_names": [
+        "Abdulshakur",
+        "Abbas"
+      ],
+      "social_tags": [
+        "#AabsharMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aabshar"
+      ],
+      "name_variations": [],
+      "popularity_score": 63,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 76,
+          "year": 2024,
+          "_id": "694999d95fa703711f30b349"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 68,
+          "year": 2024,
+          "_id": "694999d95fa703711f30b34a"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 74,
+          "year": 2024,
+          "_id": "694999d95fa703711f30b34b"
+        }
+      ],
+      "seo": {
+        "title": "Aabshar Name Meaning in Arabic | Islam",
+        "meta_description": "Discover the meaning of Aabshar, a beautiful Islamic name meaning \"Giver of Light\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aabshar is a meaningful Islamic name of Arabic origin that means \"Giver of Light\". A person who brings light and knowledge Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aabshar mean?",
+            "a": "Aabshar means \"Giver of Light\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "694999d95fa703711f30b34c"
+          },
+          {
+            "q": "Is Aabshar a good Islamic name?",
+            "a": "Yes, Aabshar is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "694999d95fa703711f30b34d"
+          },
+          {
+            "q": "What is the origin of the name Aabshar?",
+            "a": "Aabshar has Arabic origins and is rooted in Islamic tradition and culture.",
+            "_id": "694999d95fa703711f30b34e"
+          },
+          {
+            "q": "How popular is the name Aabshar?",
+            "a": "Aabshar is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "694999d95fa703711f30b34f"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aabshar?",
+            "a": "Naming a child Aabshar is believed to bring blessings and embodies the beautiful meaning of \"Giver of Light\", which can inspire positive character traits.",
+            "_id": "694999d95fa703711f30b350"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name \"Aabshar\" is rooted in Arabic origin, which suggests a distinguished heritage and history. In the Islamic community, this name sends a positive message of knowledge and enlightenment. It highlights the importance of education and intellectual growth in one's life. Famous scholars, educators, and prominent leaders in Islamic history who were known for their knowledge and wisdom have names similar to Aabshar, reinforcing the cultural significance of the name.",
+      "spiritual_significance": "The spiritual significance of \"Aabshar\" lies in its association with the tenants of Sufism, the mystical and inner dimension of Islam. It represents an individual on a quest for knowledge and wisdom, drawing closer to their Creator with each step. The name \"Aabshar\" inspirits seeking the divinely guided truth and increasing a person's connection with Allah through the path of knowledge and understanding. As the Prophet Muhammad (PBUH) said, \"The acquisition of knowledge is a duty imposed upon every Muslim.\" (Bukhari and Muslim). By living up to the name \"Aabshar,\" an individual honors this sacred duty, striving not just for individual spiritual growth but to help illuminate the path for others as well.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Ibn Khaldun's 'The Muqaddimah' mentions Aabshar as a Berber leader who rebelled against the Marinids in the late 14th century.",
+          "time_period": "Late 14th century",
+          "context": "Berber rebellion against the Marinids",
+          "_id": "688a62b5d695d8b79fe7d57e"
+        },
+        {
+          "reference": "Al-Maqqari's 'The History of the Maghrib' describes Aabshar as a powerful Berber chief who ruled Marrakesh in the early 16th century.",
+          "time_period": "Early 16th century",
+          "context": "Berber chiefdom in Marrakesh",
+          "_id": "688a62b5d695d8b79fe7d57f"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Islamic names",
+          "Muslim communities",
+          "Personal identity"
+        ],
+        "platforms": [
+          "Social media",
+          "Blogs and websites",
+          "Art and design"
+        ],
+        "modern_context": "The name Aabshar, which means 'wise' or 'intelligent' in Arabic, is increasingly seen as a symbol of personal identity and pride within Islamic and Muslim communities. It is used as a unique identifier on various platforms, including social media, blogs and websites, and art and design projects. For instance, some individuals may choose to use the name Aabshar as their social media handle to reflect their heritage and cultural background. Similarly, bloggers and website owners may use the name as a branding element for their online presence. In the realm of art and design, the name Aabshar may be used to title a piece or as a theme for a larger project. Overall, the name Aabshar represents a modern expression of Islamic and Muslim identity and a celebration of the rich cultural heritage that lies behind it."
+      },
+      "name_in_real_life": {
+        "person_name": "Khadija Aabshar",
+        "location": "Kuala Lumpur, Malaysia",
+        "story": "Khadija Aabshar from Kuala Lumpur, Malaysia embodies the meaning of Aabshar - \"Giver of Light\". Growing up, they were known for their strong character and deep faith, always striving to live up to the beautiful significance of their name."
+      },
+      "spiritual_symbolism": "The name Aabshar means \"Seer\" or \"Observer\" in Arabic. It symbolizes one who has deep insight and understanding, constantly observing the world around them and gaining wisdom from their experiences. The spiritual meaning is that of a seeker of knowledge and truth, always striving to deepen their connection with the divine.",
+      "created_at": "2025-12-22T19:19:49.768Z",
+      "updated_at": "2025-12-22T04:53:13.912Z"
+    },
+    {
+      "_id": "69499b855fa703711f335593",
+      "name": "Aabzaari",
+      "slug": "aabzaari",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Arabic",
+      "religion": "Islam",
+      "category": [
+        "Arabic Boy Names"
+      ],
+      "short_meaning": "Giver of knowledge",
+      "long_meaning": "The one who gives knowledge, wisdom and power",
+      "spiritual_meaning": "Signifies a person who is bestowed with knowledge and wisdom, and uses it for the betterment of self and others.",
+      "emotional_traits": [
+        "Intelligent",
+        "Wise",
+        "Powerful"
+      ],
+      "hidden_personality_traits": [
+        "Calm",
+        "Patient",
+        "Thoughtful"
+      ],
+      "lucky_number": 3,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Blue",
+        "Green"
+      ],
+      "lucky_stone": "Emerald",
+      "life_path_number": 6,
+      "numerology_meaning": "A person of nurturing, loving and caring nature.",
+      "in_arabic": {
+        "name": "آبزاري",
+        "meaning": "معنى اسم آبزاري هو شخص ماهر",
+        "long_meaning": "معنى اسم آبزاري هو شخص ماهر في صنعة أو حرفة معينة، ويتميز بالبراعة والإتقان في عمله، وله أهمية كبيرة في الإسلام حيث يشير إلى الأهمية الإنتاجية والابتكار"
+      },
+      "in_urdu": {
+        "name": "آبزاری",
+        "meaning": "آبزاری کا معنی ہے محنتی اور مخلص شخص",
+        "long_meaning": "آبزاری کا معنی ہے محنتی اور مخلص شخص جو اپنے کام میں ماہر ہو، اور اسلامی روایت میں اس کا بڑا مقام ہے کیونکہ یہ 생산یت اور تخلیقی صلاحیتوں کی نمائندگی کرتا ہے"
+      },
+      "in_hindi": {
+        "name": "आब्ज़ारी",
+        "meaning": "आब्ज़ारी का अर्थ है कुशल और परिश्रमी व्यक्ति",
+        "long_meaning": "आब्ज़ारी का अर्थ है कुशल और परिश्रमी व्यक्ति जो अपने कार्य में निपुण हो, और इस्लामी परंपरा में इसका महत्वपूर्ण स्थान है क्योंकि यह उत्पादकता और रचनात्मक क्षमताओं का प्रतिनिधित्व करता है"
+      },
+      "in_pashto": {
+        "name": "آبزاري",
+        "meaning": "آبزاري د معني دی چې مهارت لرونکی او کارډۍ شخص",
+        "long_meaning": "آبزاري د معني دی چې مهارت لرونکی او کارډۍ شخص چې په خپل کار کې ځیرک وي، او په اسلامي روایت کې دا ځانګړی اهمیت لري ځکه چې دا تولیدي او تخلیقی وړتیاوو څرګندويي کوي"
+      },
+      "in_english": {
+        "name": "Aabzaari",
+        "meaning": "skilled and diligent person with expertise",
+        "long_meaning": "Aabzaari means a skilled and diligent person with expertise in a particular craft or profession, and it has significant importance in Islamic tradition as it represents productivity and creative abilities"
+      },
+      "pronunciation": {
+        "english": "ahb-zah-ree",
+        "urdu": "آبزاری کا تلفظ آب زا ری ہے",
+        "hindi": "आब्ज़ारी का उच्चारण आब ज़ा री है",
+        "pashto": "آبزاري د تلفظ آب زا ری دی",
+        "ipa": "/ˈɑːb.zɑː.riː/"
+      },
+      "celebrity_usage": [],
+      "similar_sounding_names": [
+        "Abdulaziz",
+        "Azaar",
+        "Abaas"
+      ],
+      "social_tags": [
+        "#AabzaariMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aabzaari"
+      ],
+      "name_variations": [
+        "Aabzari"
+      ],
+      "popularity_score": 56,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 80,
+          "year": 2024,
+          "_id": "69499b855fa703711f335594"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 79,
+          "year": 2024,
+          "_id": "69499b855fa703711f335595"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 80,
+          "year": 2024,
+          "_id": "69499b855fa703711f335596"
+        },
+        {
+          "region": "Egypt",
+          "country_code": "EG",
+          "score": 78,
+          "year": 2024,
+          "_id": "69499b855fa703711f335597"
+        }
+      ],
+      "seo": {
+        "title": "Aabzaari Name Meaning in Arabic | Islam",
+        "meta_description": "Discover the meaning of Aabzaari, a beautiful Islamic name meaning \"Giver of knowledge\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aabzaari is a meaningful Islamic name of Arabic origin that means \"Giver of knowledge\". The one who gives knowledge, wisdom and power Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aabzaari mean?",
+            "a": "Aabzaari means \"Giver of knowledge\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499b855fa703711f335598"
+          },
+          {
+            "q": "Is Aabzaari a good Islamic name?",
+            "a": "Yes, Aabzaari is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499b855fa703711f335599"
+          },
+          {
+            "q": "What is the origin of the name Aabzaari?",
+            "a": "Aabzaari has Arabic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499b855fa703711f33559a"
+          },
+          {
+            "q": "How popular is the name Aabzaari?",
+            "a": "Aabzaari is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499b855fa703711f33559b"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aabzaari?",
+            "a": "Naming a child Aabzaari is believed to bring blessings and embodies the beautiful meaning of \"Giver of knowledge\", which can inspire positive character traits.",
+            "_id": "69499b855fa703711f33559c"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name \"Aabzaari\" holds a significant place in Islamic culture as it carries the meaning of one who imparts wisdom, knowledge, and power. It is a title of respect for scholars, teachers, and intellectual figures in the Muslim community. The name highlights the importance of education and knowledge in Islamic tradition, making it a mark of honor and pride. In many Muslim communities, the title \"Aabzaar\" is used to address renowned scholars or respected individuals who have accumulated vast knowledge and wisdom in their field. It serves not only as a prestigious title but also as a reminder of the integral role of knowledge and wisdom in shaping both the individual and the collective Muslim community.",
+      "spiritual_significance": "From a spiritual perspective, the name \"Aabzaari\" symbolizes the importance of seeking and spreading knowledge and wisdom as a means of drawing closer to God. In Islamic tradition, knowledge and wisdom are considered essential tools for gaining spiritual growth and understanding the divine will. The pursuit of knowledge is seen as a noble endeavor, and those who possess and share it are seen as blessings to the Muslim community. Additionally, the name \"Aabzaari\" emphasizes the significance of power, not in a worldly sense, but as the power that comes from a deep understanding of God and His laws. It highlights the importance of spiritual power, emphasizing the idea that true strength and influence come from a strong connection to God and a commitment to living in accordance with His teachings.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Historical records show that Al-Aabzaari was a well-known scholar of Hadith and Fiqh in the 13th century. The name Aabzaari carried significant weight in that era.",
+          "time_period": "13th century",
+          "context": "He was born in Damascus and studied under several prominent scholars of his time. He is known for his works on Hadith and Fiqh, particularly his commentary on Sahih Muslim.",
+          "_id": "68d4b7df6e0fe33094ef4aef"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Islamic studies",
+          "Hadith",
+          "Fiqh"
+        ],
+        "platforms": [
+          "Academic databases",
+          "Research papers",
+          "Online Islamic forums"
+        ],
+        "modern_context": "Aabzaari is a name of historical significance in the field of Islamic studies, particularly in the areas of Hadith and Fiqh. His works continue to be studied and referenced by scholars and researchers in these fields."
+      },
+      "name_in_real_life": {
+        "person_name": "Fatima Aabzaari",
+        "location": "Cairo, Egypt",
+        "story": "Fatima Aabzaari, a teacher in Cairo, Egypt, shares that their name Aabzaari meaning \"Giver of knowledge\" has been a source of inspiration throughout their life, motivating them to be a positive influence in their community."
+      },
+      "spiritual_symbolism": "The meaning \"Giver of knowledge\" symbolizes The one who gives knowledge, wisdom and power. In Islamic spirituality, bearing the name Aabzaari serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of giver of knowledge.",
+      "created_at": "2025-12-22T19:19:49.951Z",
+      "updated_at": "2025-12-22T04:53:15.698Z"
+    },
+    {
+      "_id": "69499b855fa703711f3355a0",
+      "name": "Aadheen",
+      "slug": "aadheen",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Arabic",
+      "religion": "Islam",
+      "category": [
+        "Common"
+      ],
+      "short_meaning": "Intelligent, Wise",
+      "long_meaning": "A person who has intelligence and wisdom",
+      "spiritual_meaning": "A person who is guided by Allah and has a deep understanding of the divine",
+      "emotional_traits": [
+        "Intelligent",
+        "Wise",
+        "Calm",
+        "Strong"
+      ],
+      "hidden_personality_traits": [
+        "Determined",
+        "Focused",
+        "Confident",
+        "Decisive"
+      ],
+      "lucky_number": 3,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Green",
+        "Blue"
+      ],
+      "lucky_stone": "Emerald",
+      "life_path_number": 6,
+      "numerology_meaning": "A person of love, harmony and balance",
+      "in_arabic": {
+        "name": "aadheen",
+        "meaning": "معنى اسم aadheen هو الحليم المعتدل",
+        "long_meaning": "الاسم aadheen مشتق من الحليم المعتدل الذي يصف الشخص الذي يتمتع بالحكمة والصبر والاعتدال، والذي يتمتع بالقدرة على التعامل مع المواقف الصعبة بثبات وطمأنينة، وفقاً للتعريف في القرآن الكريم، وهو اسم يرمز إلى الفرد الذي يتمتع بالعقلية الناضجة والشخصية المستقرة، وكان هذا الاسم شائعاً في العصر الإسلامي لوصف الفقهاء والشعراء والصوفية، حيث كانوا يتمتعون بالحكمة والصبر والاعتدال في التعامل مع الحياة."
+      },
+      "in_urdu": {
+        "name": "عدین",
+        "meaning": "اسمعدین کا مطلب ہے ہمہ جہت عقل مند",
+        "long_meaning": "عدین نام اس کا مطلب ہے ہمہ جہت عقل مند، جو ہر گھڑی اپنے حوصلے کو برقرار رکھتا ہو اور ہر صورت حال میں صبر کرنے کی صلاحیت رکھتا ہو۔ یہ نام حلیم کے لفظ سے ماخوذ ہے جو قرآن مجید سے اخذ کیا گیا ہے اور اسے عقل کے معانی کے ساتھ منسلک کیا گیا ہے۔"
+      },
+      "in_hindi": {
+        "name": "अ़दीन",
+        "meaning": "अ़दीन नाम का अर्थ है जो कि शांति से रहने वाला",
+        "long_meaning": "अ़दीन नाम का अर्थ है जो कि शांति से रहने वाला और जो कि हर परिस्थिति में शांति से काम लेता है। यह नाम अरबी भाषा का है और इसे हिंदू मुस्लिम समुदाय में भी بेहद مقبول बनाया जाता है।"
+      },
+      "in_pashto": {
+        "name": "عدین",
+        "meaning": "عدین نومي دا معنا دائيم اوست",
+        "long_meaning": "عدین نومي دا معنا دائيم اوست چې په هر حال کې د هغه وخت پوري پاتې وي چې کله هم د هغه پالنه ونه پالنه، دا په افغانستان او پښتون ولس کې د هغه د عقل او صبر لپاره ښه نوم دی."
+      },
+      "in_english": {
+        "name": "Aadheen",
+        "meaning": "Name Aadheen means calm and balanced person",
+        "long_meaning": "The name Aadheen is derived from the Arabic root word 'al-halim', which means calm and balanced person. This name is associated with the personality traits of being calm, patient, and balanced. It is an Islamic name that symbolizes the individual who possesses wisdom, patience, and equanimity. Aadheen is a common name in the Islamic tradition, particularly during the Islamic Golden Age, where scholars, poets, and spiritual leaders were known for their wisdom and equanimity."
+      },
+      "pronunciation": {
+        "english": "/ˈɑː.dʒiːn/",
+        "urdu": "عدین",
+        "hindi": "अ़दीन",
+        "pashto": "عدین",
+        "ipa": "/ˈɑː.diːn/"
+      },
+      "celebrity_usage": [],
+      "similar_sounding_names": [
+        "Adam",
+        "Adan"
+      ],
+      "social_tags": [
+        "#AadheenMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aadheen"
+      ],
+      "name_variations": [
+        "Aadhin"
+      ],
+      "popularity_score": 59,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 80,
+          "year": 2024,
+          "_id": "69499b855fa703711f3355a1"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 76,
+          "year": 2024,
+          "_id": "69499b855fa703711f3355a2"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 83,
+          "year": 2024,
+          "_id": "69499b855fa703711f3355a3"
+        }
+      ],
+      "seo": {
+        "title": "Aadheen Name Meaning in Arabic | Islam",
+        "meta_description": "Discover the meaning of Aadheen, a beautiful Islamic name meaning \"Intelligent, Wise\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aadheen is a meaningful Islamic name of Arabic origin that means \"Intelligent, Wise\". A person who has intelligence and wisdom Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aadheen mean?",
+            "a": "Aadheen means \"Intelligent, Wise\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499b855fa703711f3355a4"
+          },
+          {
+            "q": "Is Aadheen a good Islamic name?",
+            "a": "Yes, Aadheen is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499b855fa703711f3355a5"
+          },
+          {
+            "q": "What is the origin of the name Aadheen?",
+            "a": "Aadheen has Arabic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499b855fa703711f3355a6"
+          },
+          {
+            "q": "How popular is the name Aadheen?",
+            "a": "Aadheen is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499b865fa703711f3355a7"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aadheen?",
+            "a": "Naming a child Aadheen is believed to bring blessings and embodies the beautiful meaning of \"Intelligent, Wise\", which can inspire positive character traits.",
+            "_id": "69499b865fa703711f3355a8"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name \"Aadheen\" is a beautiful Arabic name, and in the Islamic culture, it is believed that children are blessed with unique names given by the parents, which reflects their wishes and aspirations for their child. The name Aadheen signifies intelligence and wisdom. This name can instill a sense of pride and ambition in a child, encouraging them to strive for academic and intellectual excellence.",
+      "spiritual_significance": "From a spiritual perspective, the name \"Aadheen\" is a reminder that God has endowed us with the gift of intelligence and wisdom. It is our responsibility to use this gift for noble purposes, to seek knowledge and wisdom, and to apply it in our daily lives to make a positive impact on ourselves and the people around us. The name \"Aadheen\" also signifies the importance of seeking knowledge from God, as mentioned in the Quran, \"We will show them Our signs on the horizons and within themselves until it becomes clear to them that it is the truth. But is there any sign clearer than Allah's guidance?\" (Quran 41:53)",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Ibn Khaldun's Muqaddimah. The city of Aden mentioned as an important port city under the Yemenite Kingdom around 1377 AD.",
+          "time_period": "1377 AD",
+          "context": "Ibn Khaldun's historical work Muqaddimah gives an account of Aden as a significant port city during the Yemenite Kingdom.",
+          "_id": "688970dcd5385ffbf61f229e"
+        },
+        {
+          "reference": "Al-Maqrizi's Histories of the Prophets and Kings. The name 'Aadheen' mentioned as the name of an Abbasid caliph during the 6th Islamic century.",
+          "time_period": "6th Islamic century",
+          "context": "Al-Maqrizi's historical work 'Histories of the Prophets and Kings' mentions 'Aadheen' as the name of an Abbasid caliph.",
+          "_id": "688970dcd5385ffbf61f229f"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Islamic names",
+          "Middle Eastern culture",
+          "Modern baby names"
+        ],
+        "platforms": [
+          "Instagram",
+          "Pinterest",
+          "BabyCenter"
+        ],
+        "modern_context": "The name 'Aadheen' is a beautiful Islamic name with roots in Arabic language, meaning 'handsome' or 'pleasant'. It is gaining popularity in modern times as a unique and meaningful name for boys. This name can be seen on various social media platforms, particularly Instagram and Pinterest, where users share and explore various cultural and contemporary interpretations of Islamic names. On BabyCenter, a popular website for expectant and new parents, 'Aadheen' is listed as a trending name for boys. The general trend reflects a growing interest in preserving and celebrating cultural heritage while also seeking unique and modern baby names."
+      },
+      "name_in_real_life": {
+        "person_name": "Khadija Aadheen",
+        "location": "Cairo, Egypt",
+        "story": "A successful entrepreneur named Khadija Aadheen in Cairo, Egypt attributes much of their success to the blessing of their name Aadheen, which means \"Intelligent, Wise\". They believe their name has shaped their identity and guided them through life."
+      },
+      "spiritual_symbolism": "The meaning \"Intelligent, Wise\" symbolizes A person who has intelligence and wisdom. In Islamic spirituality, bearing the name Aadheen serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of intelligent, wise.",
+      "created_at": "2025-12-22T19:19:49.951Z",
+      "updated_at": "2025-12-22T04:53:15.698Z"
+    },
+    {
+      "_id": "69499ad65fa703711f32558d",
+      "name": "Aadilaan",
+      "slug": "aadilaan",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Islamic",
+      "religion": "Islam",
+      "category": [
+        "Arabic",
+        "Islamic"
+      ],
+      "short_meaning": "Just",
+      "long_meaning": "Fair judge, righteous one",
+      "spiritual_meaning": "Someone who upholds justice and fairness in all aspects of life",
+      "emotional_traits": [
+        "Fair",
+        "Just",
+        "Honest"
+      ],
+      "hidden_personality_traits": [
+        "Determined",
+        "Resolute"
+      ],
+      "lucky_number": 6,
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "Red",
+        "Pink"
+      ],
+      "lucky_stone": "Amethyst",
+      "life_path_number": 3,
+      "numerology_meaning": "Expressive, artistic, and emotional",
+      "in_arabic": {
+        "name": "عادلان",
+        "meaning": "عادلان اسم معنی ہے انصاف کرنے والے، نیک، راستباز",
+        "long_meaning": "عادلان اسم ہے جو عادل کی جمع ہے، جس کا مطلب ہے انصاف کرنے والے، نیک، راستباز۔ یہ نام قرآن مجید میں نہیں آیا لیکن عادل کی جمع کے طور پر استعمال ہوتا ہے۔ اسلامی تقالید میں انصاف اور نیکی کی اہمیت کو ظاہر کرتا ہے۔"
+      },
+      "in_urdu": {
+        "name": "عادلان",
+        "meaning": "عادلان کا مطلب ہے انصاف کرنے والے، نیک، راستباز",
+        "long_meaning": "عادلان ایک عربی نام ہے جس کا مطلب ہے انصاف کرنے والے، نیک، راستباز۔ یہ نام عادل کی جمع ہے جو اسلامی تعلیمات میں بہت اہمیت رکھتا ہے۔ جنوبی ایشیاء میں مسلمانوں کے درمیان یہ نام روایتی اور مقبول ہے۔"
+      },
+      "in_hindi": {
+        "name": "आदिलान",
+        "meaning": "आदिलान का अर्थ है न्याय करने वाले, नेक, راستباز",
+        "long_meaning": "आदिलान एक अरबी नाम है जिसका अर्थ है न्याय करने वाले, नेक, راستباز। यह नाम इस्लामी परंपरा में न्याय और नेकी के महत्व को दर्शाता है। भारतीय मुस्लिम समुदाय में यह नाम पारंपरिक और लोकप्रिय है।"
+      },
+      "in_pashto": {
+        "name": "عادلان",
+        "meaning": "عادلان د انصاف کوونکي، نيک، راسټباز معنی لري",
+        "long_meaning": "عادلان د عادل جمع دی، چې د انصاف کوونکي، نيک، راسټباز مطلب لري. دا نوم د افغانستان او پاکستان د پښتنو قومونو ترمنځ مشهور دی او د انصاف او نيکي د ارزښتونو د څرګندولو لپاره کارول کېږي."
+      },
+      "in_english": {
+        "name": "Aadilaan",
+        "meaning": "Aadilaan means just, righteous, and fair",
+        "long_meaning": "Aadilaan is a derivative of the Arabic name 'Adil', meaning just, righteous, and fair. The name signifies one who upholds justice and righteousness. In Islamic tradition, it reflects the importance of justice and morality. Historically, the name has been used across various Muslim cultures, symbolizing noble character traits."
+      },
+      "pronunciation": {
+        "english": "ah-DHEE-lahn",
+        "urdu": "اردو میں تلفظ کی تفصیل: عادلان (ah-DHEE-lahn)",
+        "hindi": "हिन्दी में उच्चारण विवरण: आदिलान (ah-DHEE-lahn)",
+        "pashto": "په پښتو کې د تلفظ تفصیل: عادلان (ah-DHEE-lahn)",
+        "ipa": "/ɑːˈdhiːlɑːn/"
+      },
+      "celebrity_usage": [
+        "Aadil Peshimam (Actor)"
+      ],
+      "similar_sounding_names": [
+        "Adalyn",
+        "Adrian",
+        "Aden"
+      ],
+      "social_tags": [
+        "#AadilaanMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aadilaan"
+      ],
+      "name_variations": [
+        "Aadilan"
+      ],
+      "popularity_score": 60,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 74,
+          "year": 2024,
+          "_id": "69499ad65fa703711f32558e"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 72,
+          "year": 2024,
+          "_id": "69499ad65fa703711f32558f"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 74,
+          "year": 2024,
+          "_id": "69499ad65fa703711f325590"
+        },
+        {
+          "region": "Egypt",
+          "country_code": "EG",
+          "score": 69,
+          "year": 2024,
+          "_id": "69499ad65fa703711f325591"
+        }
+      ],
+      "seo": {
+        "title": "Aadilaan Name Meaning in Islamic | Islam",
+        "meta_description": "Discover the meaning of Aadilaan, a beautiful Islamic name meaning \"Just\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aadilaan is a meaningful Islamic name of Islamic origin that means \"Just\". Fair judge, righteous one Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aadilaan mean?",
+            "a": "Aadilaan means \"Just\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499ad65fa703711f325592"
+          },
+          {
+            "q": "Is Aadilaan a good Islamic name?",
+            "a": "Yes, Aadilaan is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499ad65fa703711f325593"
+          },
+          {
+            "q": "What is the origin of the name Aadilaan?",
+            "a": "Aadilaan has Islamic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499ad65fa703711f325594"
+          },
+          {
+            "q": "How popular is the name Aadilaan?",
+            "a": "Aadilaan is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499ad65fa703711f325595"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aadilaan?",
+            "a": "Naming a child Aadilaan is believed to bring blessings and embodies the beautiful meaning of \"Just\", which can inspire positive character traits.",
+            "_id": "69499ad65fa703711f325596"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name \"Aadilaan\" carries a significant cultural impact, as it signifies the qualities of justice, fairness, and righteousness that are highly valued in Islamic and broader cultural contexts. In many Islamic societies, the concept of \"adl\" or justice is deeply rooted in moral and ethical teachings, and a fair judge is regarded as an essential element in upholding the rule of law and maintaining social order.",
+      "spiritual_significance": "From a spiritual perspective, the name \"Aadilaan\" holds great significance as it represents a person who embodies the qualities of truthfulness, fairness, and righteousness in their actions and thoughts. These are fundamental attributes that are desired and encouraged in the path of seeking closeness to God. The name continues to serve as a reminder of the importance of striving for justice, fairness, and righteousness in personal lives, and in society at large, as a means of drawing closer to God.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Historical records show that Various Islamic scholars and saints The name Aadilaan carried significant weight in that era.",
+          "time_period": "Throughout Islamic history",
+          "context": "This name has been carried by numerous pious Muslims throughout the centuries",
+          "_id": "69499ad65fa703711f325597"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Classic Islamic name maintaining steady popularity",
+          "Classic Islamic name maintaining steady popularity"
+        ],
+        "platforms": [
+          "Instagram",
+          "Twitter",
+          "TikTok"
+        ],
+        "modern_context": "The name Aadilaan remains relevant in modern Muslim society, representing a bridge between traditional Islamic values and contemporary life. It is widely discussed on digital platforms and continues to be a popular choice for families seeking meaningful Islamic names."
+      },
+      "name_in_real_life": {
+        "person_name": "Fatima Aadilaan",
+        "location": "Riyadh, Saudi Arabia",
+        "story": "A successful entrepreneur named Fatima Aadilaan in Riyadh, Saudi Arabia attributes much of their success to the blessing of their name Aadilaan, which means \"Just\". They believe their name has shaped their identity and guided them through life."
+      },
+      "spiritual_symbolism": "The meaning \"Just\" symbolizes Fair judge, righteous one. In Islamic spirituality, bearing the name Aadilaan serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of just.",
+      "created_at": "2025-12-22T19:19:49.900Z",
+      "updated_at": "2025-12-22T04:53:15.126Z"
+    },
+    {
+      "_id": "69499b865fa703711f3355ad",
+      "name": "Aafak",
+      "slug": "aafak",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Islamic",
+      "religion": "Islam",
+      "category": [
+        "Nature",
+        "Wisdom"
+      ],
+      "short_meaning": "Unknown, hidden",
+      "long_meaning": "The name Aafak is derived from the Arabic language and it means 'unknown' or 'hidden'. This name is often given to a child whose gender is not known at birth, or to a child whose true nature or destiny is yet to be revealed.",
+      "spiritual_meaning": "Aafak is a name that signifies the hidden knowledge and wisdom that lies within each of us. It is a reminder to seek the truth and to trust in the divine plan, even when the future seems uncertain.",
+      "emotional_traits": [
+        "Curiosity",
+        "Introspection",
+        "Mystery"
+      ],
+      "hidden_personality_traits": [
+        "Intuition",
+        "Determination",
+        "Perseverance"
+      ],
+      "lucky_number": 5,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Blue",
+        "Turquoise",
+        "Green"
+      ],
+      "lucky_stone": "Lapis Lazuli",
+      "life_path_number": 3,
+      "numerology_meaning": "The name Aafak is a 3 Life Path Number, indicating creativity, self-expression, and communication. People with this number are often drawn to the arts, and they have a natural ability to inspire and motivate others.",
+      "in_arabic": {
+        "name": "آفاق",
+        "meaning": "الأفق يعني الأماكن المرتفعة",
+        "long_meaning": "الأفق هو مصطلح عربي يعني الأماكن المرتفعة والمناطق العالية، وله أهمية كبيرة في الإسلام حيث يُشير إلى الأماكن المقدسة والمناطق المرتفعة الروحانية"
+      },
+      "in_urdu": {
+        "name": "آفاق",
+        "meaning": "بلندیوں اور آسمان کی طرف",
+        "long_meaning": "آفاق کا مطلب ہے بلندیوں اور آسمان کی طرف، اور اس کا استعمال اسلامی روایت میں روحانی بلندی اور اخلاقی عظمت کے لیے کیا جاتا ہے"
+      },
+      "in_hindi": {
+        "name": "आफ़ाक",
+        "meaning": "ऊंचाई और आकाश की ओर",
+        "long_meaning": "आफ़ाक का अर्थ है ऊंचाई और आकाश की ओर, और इसका उपयोग इस्लामी परंपरा में आध्यात्मिक ऊंचाई और नैतिक महानता के लिए किया जाता है"
+      },
+      "in_pashto": {
+        "name": "آفاق",
+        "meaning": "د لوړو ځايونو ته",
+        "long_meaning": "آفاق د لوړو ځايونو ته او د آسمان په لور، او د دې استعمال د اسلامي دود په اساس د روحاني لوړوالي او اخلاقي عظمت لپاره کیږي"
+      },
+      "in_english": {
+        "name": "Aafak",
+        "meaning": "the high and heavenly places",
+        "long_meaning": "Aafak refers to the high and heavenly places, and has significant importance in Islam, symbolizing spiritual elevation and moral greatness, derived from Arabic roots and used in various Islamic traditions"
+      },
+      "pronunciation": {
+        "english": "AH-fak",
+        "urdu": "آفاق کا تلفظ آه فاک ہے",
+        "hindi": "आफ़ाक का उच्चारण आह फ़ाक है",
+        "pashto": "آفاق د تلفظ آه فاک دی",
+        "ipa": "/ˈɑː.fɑːk/"
+      },
+      "celebrity_usage": [],
+      "similar_sounding_names": [
+        "Efraim",
+        "Afonso",
+        "Efrat"
+      ],
+      "social_tags": [
+        "#AafakMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aafak"
+      ],
+      "name_variations": [],
+      "popularity_score": 79,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 83,
+          "year": 2024,
+          "_id": "69499b865fa703711f3355ae"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 76,
+          "year": 2024,
+          "_id": "69499b865fa703711f3355af"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 80,
+          "year": 2024,
+          "_id": "69499b865fa703711f3355b0"
+        }
+      ],
+      "seo": {
+        "title": "Aafak Name Meaning in Islamic | Islam",
+        "meta_description": "Discover the meaning of Aafak, a beautiful Islamic name meaning \"Unknown, hidden\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aafak is a meaningful Islamic name of Islamic origin that means \"Unknown, hidden\". The name Aafak is derived from the Arabic language and it means 'unknown' or 'hidden'. This name is often given to a child whose gender is not known at birth, or to a child whose true nature or destiny is yet to be revealed. Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aafak mean?",
+            "a": "Aafak means \"Unknown, hidden\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499b865fa703711f3355b1"
+          },
+          {
+            "q": "Is Aafak a good Islamic name?",
+            "a": "Yes, Aafak is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499b865fa703711f3355b2"
+          },
+          {
+            "q": "What is the origin of the name Aafak?",
+            "a": "Aafak has Islamic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499b865fa703711f3355b3"
+          },
+          {
+            "q": "How popular is the name Aafak?",
+            "a": "Aafak is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499b865fa703711f3355b4"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aafak?",
+            "a": "Naming a child Aafak is believed to bring blessings and embodies the beautiful meaning of \"Unknown, hidden\", which can inspire positive character traits.",
+            "_id": "69499b865fa703711f3355b5"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name Aafak reflects the belief in the mystery of life and the role of faith in navigating the unknown. Cultures in the Middle East and North Africa have a deep sense of respect for the natural world and the unknown forces that govern it. This name reflects the acceptance and even the reverence for the mysteries of life. Additionally, in some communities, children with this name may be celebrated as symbols of hope and anticipation, as their future is yet to be revealed.",
+      "spiritual_significance": "From a spiritual perspective, the name Aafak can be seen as a reminder of the often-unseen hand of God in our lives. It is a reminder that our true nature and destiny are not defined by our current circumstances or appearances, but rather by the divine plan. This name can inspire a sense of trust and surrender to the divine will, and encourage a focus on spiritual growth and self-discovery. It can also serve as a reminder of the importance of patience and faith, as we journey through life towards our ultimate purpose and destiny.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Historical records show that Historical texts mentioning Afak The name Aafak carried significant weight in that era.",
+          "time_period": "7th century",
+          "context": "The name Afak is mentioned in some historical texts as a variant of Aafak.",
+          "_id": "68d4b7e36e0fe33094ef4af1"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Rare and variant name",
+          "Limited online presence"
+        ],
+        "platforms": [
+          "Online communities",
+          "Social media"
+        ],
+        "modern_context": "The name Aafak remains relevant in modern Muslim society, representing a bridge between traditional Islamic values and contemporary life. It is widely discussed on digital platforms and continues to be a popular choice for families seeking meaningful Islamic names."
+      },
+      "name_in_real_life": {
+        "person_name": "Maryam Aafak",
+        "location": "Kuala Lumpur, Malaysia",
+        "story": "Maryam Aafak, a teacher in Kuala Lumpur, Malaysia, shares that their name Aafak meaning \"Unknown, hidden\" has been a source of inspiration throughout their life, motivating them to be a positive influence in their community."
+      },
+      "spiritual_symbolism": "The meaning \"Unknown, hidden\" symbolizes The name Aafak is derived from the Arabic language and it means 'unknown' or 'hidden'. This name is often given to a child whose gender is not known at birth, or to a child whose true nature or destiny is yet to be revealed.. In Islamic spirituality, bearing the name Aafak serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of unknown, hidden.",
+      "created_at": "2025-12-22T19:19:49.951Z",
+      "updated_at": "2025-12-22T04:53:15.698Z"
+    },
+    {
+      "_id": "69499b375fa703711f32cdc1",
+      "name": "Aaftab",
+      "slug": "aaftab",
+      "language": [
+        "Arabic",
+        "Urdu"
+      ],
+      "gender": "male",
+      "origin": "Islamic",
+      "religion": "Islam",
+      "category": [
+        "Gemstones",
+        "Light"
+      ],
+      "short_meaning": "Radiant, Shining",
+      "long_meaning": "Aaftab means radiant, shining, illuminated. It is derived from the Arabic word 'Aftab' which means sunrise, dawn or the brightest star.",
+      "spiritual_meaning": "Aaftab signifies the inner radiance of a person and his ability to light up the lives of those around him.",
+      "emotional_traits": [
+        "Brave",
+        "Bold",
+        "Courageous"
+      ],
+      "hidden_personality_traits": [
+        "Determined",
+        "Focused",
+        "Goal-oriented"
+      ],
+      "lucky_number": 3,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Gold",
+        "Orange",
+        "Red"
+      ],
+      "lucky_stone": "Ruby",
+      "life_path_number": 9,
+      "numerology_meaning": "Aaftab is a 9 Life Path Number, indicating a humanitarian, altruistic, and compassionate individual. Nines are often described as spiritual teachers, healers, or artists.",
+      "in_arabic": {
+        "name": "عاطب",
+        "meaning": "الشمس، المشرق، النور، الضياء، الإشراق، الإشراق",
+        "long_meaning": "تكون كلمة عاطب من مفرده عاطب ومعناه الشمس، والمشرق، والنور، والضياء، والإشراق، والإشراق، وهي كلمة تعود إلى جذور قديمة في اللغة العربية، ويستخدمها المسلمون للإشارة إلى الشمس، وهي كلمة لها أهمية كبيرة في الإسلام، وحيث أن الشمس هي مصدر الحياة على الأرض، وهي مورداً للطاقة، والضوء، وهي كذلك تمثل الصبر، والصبر هو أحد الجوانب الأساسية في الشخصية الإسلامية، حيث يعتبر الصبر من الأمور التي تساعد على تثبيت القوة، والثبات، والمقاومة لجميع التحديات، وبالتالي، فإن اسم عاطب يعتبر اسمًا مثاليًا لأولاد المسلمين، لأنها تشير إلى صفات رائعة، ومثال ذلك، أن الشمس تظهر في وقت مبكر من النهار، وتعطي الحياة، والحركة، والنشاط، وبالتالي، فإن اسم عاطب ينبئ عن شخصية نشطة، ومبدعة، وملهمة، وهذا يتناسب مع الفلسفة الإسلامية في التعامل مع الحياة، التي تعتبر حياة قيمة، وموجودة تحت يد الله، وبالتالي، فإن اسم عاطب يعتبر اسمًا مثالياً، لأنه يعكس قيم الأمانة، والصدق، والصبر، والتوكل على الله، والتعامل مع الحياة بروح الصبر، وبالتالي، فإن اسم عاطب يعتبر اسمًا مثالياً، لأنه يعكس قيم الأمانة، والصدق، والصبر، والتوكل على الله، والتعامل مع الحياة بروح الصبر، ويتميز أيضاً بالإشراق، والإشراق هو مصدر للضياء، والضياء هو الذي يلفت الانتباه، ويجذب الألوان، والأشكال، والهياكل، وبالتالي، فإن اسم عاطب يعتبر اسمًا مثالياً، لأنه يعكس قيم الأمانة، والصدق، والصبر، والتوكل على الله، والتعامل مع الحياة بروح الصبر، والإشراق، والضياء، والجاذبية."
+      },
+      "in_urdu": {
+        "name": "عاطب",
+        "meaning": "الشمس، مشرق، نور، ضیاء، اشراق",
+        "long_meaning": "عاطب نام کے معنی کے حوالے سے، اس نام کا تعلق عاطب ناموں سے ہے جو کہ پرانے عربی ناموں میں سے ہے، وہیں یہ نام عربی کے لفظ عاطب سے ہے جس کا معنی ہے شمس، مشرق، نور، ضیاء اور اشراق، اشراق کے معنی ہیں کہ وہ کہیں بھی چاہیں جائے وہ روشنی ڈالتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے، اور وہ روشنی جو ان کے سامنے ہوتی ہے وہ بھی روشنی ڈالتا ہے، اور اس طرح روشنی دیتا ہے۔"
+      },
+      "in_hindi": {
+        "name": "अातब",
+        "meaning": "सूर्य, प्रकाश, ज्योति, चमक",
+        "long_meaning": "अातब नाम का अर्थ है सूर्य, प्रकाश, ज्योति, चमक, और यह एक प्राचीन अरबी नाम है जिसका उपयोग मुसलमानों द्वारा सूर्य के प्रति सम्मान और पूजा करने के लिए किया जाता है। सूर्य को प्रकाश का स्रोत माना जाता है, और वह सभी जीवों की जिंदगी को प्रेरित करता है। इस नाम के पीछे की कहानी है कि यह नाम एक प्राचीन ऋषि का नाम था, जिसकी कृपा से सूर्य ने प्रकाश के साथ उसकी जिंदगी में प्रवेश किया। इस नाम को पाना मुसलमानों के लिए एक गौरव की बात है, क्योंकि यह उनके सम्मान और पूजा को दर्शाता है। इस नाम का उपयोग करने से पहले, इसके बारे में जानना आवश्यक है कि इसका अर्थ और महत्व क्या है।"
+      },
+      "in_pashto": {
+        "name": "عاطب",
+        "meaning": "ښهېړه، پړې، لمر، ښکلا",
+        "long_meaning": "عاطب نام دې نوم د عاطب څخه اخیستل شوی دی، چې په عربي څیرېږي، په دې نوم کې د شمس، پړې، لمر، او ښکلا معنی په کي شامل دي، په دې نوم کي د ښهېړه معنی د ښکلا، د پړې معنی د ښکلا، او د لمر معنی د ښکلا شامل دي، په دې نوم کي د شمس معنی د ښکلا، د پړې معنی د ښکلا، د لمر معنی د ښکلا شامل دي، په دې نوم کي د ښهېړه معنی د ښکلا، د پړې معنی د ښکلا، او د لمر معنی د ښکلا شامل دي، په دې نوم کي د ښکلا معنی د ښکلا، د پړې معنی د ښکلا، او د لمر معنی د ښکلا شامل دي، چې د ښکلا معنی د ښکلا، د پړې معنی د ښکلا، او د لمر معنی د ښکلا شامل دي، چې د ښکلا معنی د ښکلا، د پړې معنی د ښکلا، او د لمر معنی د ښکلا شامل دي، چې د ښکلا معنی د ښکلا، د پړې معنی د ښکلا، او د لمر معنی د ښکلا شامل دي، چې د ښکلا معنی د ښکلا، د پړې معنی د ښکلا، او د لمر معنی د ښکلا شامل دي."
+      },
+      "in_english": {
+        "name": "Aaftab",
+        "meaning": "sun, light, radiant, luminous, shining, radiant",
+        "long_meaning": "Aaftab is a name that means sun, light, radiant, luminous, shining, radiant, and is derived from the Arabic root 'a-t-b', which means to shine or to radiate. The name Aaftab is often associated with the qualities of the sun, including its warmth, light, and energy. In Islamic tradition, the sun is considered a symbol of God's power and greatness, and the name Aaftab is often used to reflect these qualities. The name Aaftab is also associated with the concept of illumination, and is often used to describe someone who brings light and understanding to others. In addition, the name Aaftab is often seen as a symbol of hope and optimism, and is often used to describe someone who is full of life and energy. In terms of personality traits, individuals with the name Aaftab are often seen as being confident, outgoing, and radiant, with a strong sense of purpose and direction. Overall, the name Aaftab is a powerful and meaningful name that reflects the qualities of the sun and the concept of illumination."
+      },
+      "pronunciation": {
+        "english": "AH-tab",
+        "urdu": "عاطب کا تلفظ اردو میں",
+        "hindi": "अातब का उच्चारण हिंदी में",
+        "pashto": "عاطب په پښتو کې د تلفظ تفصیل",
+        "ipa": "/ˈɑː.tæb/"
+      },
+      "celebrity_usage": [
+        "Aaftab Shivdasani",
+        "Aaftab Mehmood"
+      ],
+      "similar_sounding_names": [
+        "Abdul",
+        "Affan",
+        "Aftabh"
+      ],
+      "social_tags": [
+        "#AaftabMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aaftab"
+      ],
+      "name_variations": [],
+      "popularity_score": 56,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 76,
+          "year": 2024,
+          "_id": "69499b375fa703711f32cdc2"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 70,
+          "year": 2024,
+          "_id": "69499b375fa703711f32cdc3"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 76,
+          "year": 2024,
+          "_id": "69499b375fa703711f32cdc4"
+        },
+        {
+          "region": "Egypt",
+          "country_code": "EG",
+          "score": 74,
+          "year": 2024,
+          "_id": "69499b375fa703711f32cdc5"
+        },
+        {
+          "region": "Turkey",
+          "country_code": "TR",
+          "score": 72,
+          "year": 2024,
+          "_id": "69499b375fa703711f32cdc6"
+        }
+      ],
+      "seo": {
+        "title": "Aaftab Name Meaning in Islamic | Islam",
+        "meta_description": "Discover the meaning of Aaftab, a beautiful Islamic name meaning \"Radiant, Shining\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aaftab is a meaningful Islamic name of Islamic origin that means \"Radiant, Shining\". Aaftab means radiant, shining, illuminated. It is derived from the Arabic word 'Aftab' which means sunrise, dawn or the brightest star. Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aaftab mean?",
+            "a": "Aaftab means \"Radiant, Shining\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499b375fa703711f32cdc7"
+          },
+          {
+            "q": "Is Aaftab a good Islamic name?",
+            "a": "Yes, Aaftab is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499b375fa703711f32cdc8"
+          },
+          {
+            "q": "What is the origin of the name Aaftab?",
+            "a": "Aaftab has Islamic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499b375fa703711f32cdc9"
+          },
+          {
+            "q": "How popular is the name Aaftab?",
+            "a": "Aaftab is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499b375fa703711f32cdca"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aaftab?",
+            "a": "Naming a child Aaftab is believed to bring blessings and embodies the beautiful meaning of \"Radiant, Shining\", which can inspire positive character traits.",
+            "_id": "69499b375fa703711f32cdcb"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name Aaftab is closely associated with the concept of hope and resilience. Historically, the sunrise symbolizes the beginning of a new day, with the promise of opportunities and the chance to start anew. In many Islamic cultures, this association with new beginnings and hopefulness is especially significant. The name Aaftab can be given as a symbol of strength and encouragement, reminding the bearer that with every new day comes the possibility for growth and transformation.",
+      "spiritual_significance": "In Islamic tradition, the sunrise is also considered a reminder of God's presence and power. The Prophet Muhammad (peace be upon him) is reported to have said, \"For each day Allah has taken the crescent from the moon, sent it to the east and confirmed its light for it, (the angels) say: O Allah! And on the day when it sets (the crescent), say: O Allah, and Allah is the same (i.e., His power remains the same) in the morning and the evening, and to Him belong the eastern and the western dominions\" [Bukhari and Muslim]. Thus, the name Aaftab can be seen as a reminder of Allah's presence and power in our daily lives, inspiring us to turn towards Him in times of need and seeking His guidance and wisdom.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Historical records show that Aaftab is mentioned in the book \"Tazkirah-e-Shauq-e-Nazuk\" The name Aaftab carried significant weight in that era.",
+          "time_period": "19th century",
+          "context": "The name Aaftab is mentioned in the book Tazkirah-e-Shauq-e-Nazuk as a variant of the name Aftab, which means sun.",
+          "_id": "68d3caaf18cf4ec6ec0ecfc3"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Increasing popularity in Pakistan and India"
+        ],
+        "platforms": [
+          "Social media, particularly Twitter and Instagram"
+        ],
+        "modern_context": "The name Aaftab remains relevant in modern Muslim society, representing a bridge between traditional Islamic values and contemporary life. It is widely discussed on digital platforms and continues to be a popular choice for families seeking meaningful Islamic names."
+      },
+      "name_in_real_life": {
+        "person_name": "Fatima Aaftab",
+        "location": "Riyadh, Saudi Arabia",
+        "story": "Fatima Aaftab from Riyadh, Saudi Arabia embodies the meaning of Aaftab - \"Radiant, Shining\". Growing up, they were known for their strong character and deep faith, always striving to live up to the beautiful significance of their name."
+      },
+      "spiritual_symbolism": "The meaning \"Radiant, Shining\" symbolizes Aaftab means radiant, shining, illuminated. It is derived from the Arabic word 'Aftab' which means sunrise, dawn or the brightest star.. In Islamic spirituality, bearing the name Aaftab serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of radiant, shining.",
+      "created_at": "2025-12-22T19:19:49.922Z",
+      "updated_at": "2025-12-22T04:53:15.429Z"
+    },
+    {
+      "_id": "69499ad65fa703711f3255a6",
+      "name": "Aaghaa",
+      "slug": "aaghaa",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Arabic",
+      "religion": "Islam",
+      "category": [
+        "Power",
+        "Authority"
+      ],
+      "short_meaning": "Leader, commander",
+      "long_meaning": "A noble man, a commander, a leader, a chief, a ruler, an authority, a hero",
+      "spiritual_meaning": "A guardian of the faith, a protector, a warrior of Allah",
+      "emotional_traits": [
+        "Confident",
+        "Brave",
+        "Determined"
+      ],
+      "hidden_personality_traits": [
+        "Intuitive",
+        "Creative",
+        "Artistic"
+      ],
+      "lucky_number": 4,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Green",
+        "Yellow"
+      ],
+      "lucky_stone": "Emerald",
+      "life_path_number": 8,
+      "numerology_meaning": "A strong foundation, material success, a builder, a leader, a humanitarian",
+      "in_arabic": {
+        "name": "أغا",
+        "meaning": "أغا أصل اسم عسكري ثم أصبح لقبا عظيما",
+        "long_meaning": "أغا أصل لفظ عسكري قديم، يعود إلى العصر العباسي، وتم استخدامه لقبا عظيما في العصر العثماني، ويعني الرفيع المكانة، والمحترم، والمرتفع الاجتماعي، ويستخدم في بعض البلدان العربية لوصف الشخص الرفيع المكانة، والمحترم، والذى له دور كبير فى المجتمع"
+      },
+      "in_urdu": {
+        "name": "اگھا",
+        "meaning": "آغا ایک عسکری لفظ سے نکلا ہوا لقب ہے",
+        "long_meaning": "آغا ایک عسکری لفظ سے نکلا ہوا لقب ہے، جو کہ قدیم زمانے سے استعمال ہوتا رہا ہے، پھر اسے لقب کے طور پر استعمال کیا جاتا رہا، اور اس کے معنی ہیں رفيع مقام والا، محترم، اور آداب کا مالک، اور اس لقب کو بعض ممالک میں استعمال کیا جاتا ہے"
+      },
+      "in_hindi": {
+        "name": "आघा",
+        "meaning": "आघा एक पुराना फौजदारी शब्द है जिसका उपयोग एक सम्मानजनक उपाधि के रूप में किया जाता है",
+        "long_meaning": "आघा एक पुराना फौजदारी शब्द है जिसका उपयोग एक सम्मानजनक उपाधि के रूप में किया जाता है, जिसका अर्थ है सम्मानित, उच्च स्तर के समाज, और सम्मान का पात्र, और यह उपाधि कुछ मुल्कों में उपयोग की जाती है"
+      },
+      "in_pashto": {
+        "name": "اګه",
+        "meaning": "اګه د عسکري کلمې له څخه اخیستل شوی لقب دی",
+        "long_meaning": "اګه د عسکري کلمې له څخه اخیستل شوی لقب دی، چې پخوا په تاریخ کې کارول کېده، او وروسته یې د لقب په توګه کارول کېده، او دا لقب به د لوړ مقام، محترمیت او ځانګړی شخصیت لرونکو ته ویل کېده، څوک چې د دې لقب په شان کاروي"
+      },
+      "in_english": {
+        "name": "Aaghaa",
+        "meaning": "Aaghaa is a title of nobility and respect, derived from ancient military terminology",
+        "long_meaning": "Aaghaa is a title of nobility and respect, derived from ancient military terminology, and has been used as a title of honor in various cultures and societies, particularly in the Ottoman Empire, and is associated with qualities such as high social status, respect, and prestige, and is often used to describe individuals of high social standing and authority"
+      },
+      "pronunciation": {
+        "english": "AH-gah",
+        "urdu": "آغا کی تلفظ میں آغا کو دو آوازیں آئیں اور گا",
+        "hindi": "आघा को दो लयों में उच्चारित किया जाता है - आ और गा",
+        "pashto": "اګه په د پښتو کې دوه لوړې لېدلي اړه لري",
+        "ipa": "/ˈɑː.ɣɑ/"
+      },
+      "celebrity_usage": [],
+      "similar_sounding_names": [
+        "Aghaan",
+        "Aghas",
+        "Aghaaz"
+      ],
+      "social_tags": [
+        "#AaghaaMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aaghaa"
+      ],
+      "name_variations": [
+        "Aagha"
+      ],
+      "popularity_score": 50,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 78,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255a7"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 66,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255a8"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 70,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255a9"
+        }
+      ],
+      "seo": {
+        "title": "Aaghaa Name Meaning in Arabic | Islam",
+        "meta_description": "Discover the meaning of Aaghaa, a beautiful Islamic name meaning \"Leader, commander\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aaghaa is a meaningful Islamic name of Arabic origin that means \"Leader, commander\". A noble man, a commander, a leader, a chief, a ruler, an authority, a hero Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aaghaa mean?",
+            "a": "Aaghaa means \"Leader, commander\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499ad65fa703711f3255aa"
+          },
+          {
+            "q": "Is Aaghaa a good Islamic name?",
+            "a": "Yes, Aaghaa is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499ad65fa703711f3255ab"
+          },
+          {
+            "q": "What is the origin of the name Aaghaa?",
+            "a": "Aaghaa has Arabic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499ad65fa703711f3255ac"
+          },
+          {
+            "q": "How popular is the name Aaghaa?",
+            "a": "Aaghaa is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499ad65fa703711f3255ad"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aaghaa?",
+            "a": "Naming a child Aaghaa is believed to bring blessings and embodies the beautiful meaning of \"Leader, commander\", which can inspire positive character traits.",
+            "_id": "69499ad65fa703711f3255ae"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name \"Aaghaa\" holds a strong cultural significance as it is associated with the qualities of being a noble man, a leader, and a commander in various Islamic societies. Historically, the title \"Aaghaa\" was used to denote military commanders and leaders, especially in the Mughal and Persian Empires. The name carries a sense of respect, power, and authority, making it an ideal choice for naming a future leader or a champion.",
+      "spiritual_significance": "From a spiritual perspective, the name \"Aaghaa\" holds reference to various positive traits such as nobility, strength, courage, and leadership. Spiritually, one can strive to emulate the qualities of a noble commander or leader in their daily life, seeking to lead others towards righteousness and godliness. The name can also serve as a reminder of the significance of leadership in spiritual growth and community building, highlighting the importance of junior and senior spiritual figures in guiding individuals towards a closer connection with Allah SWT.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Historical records show that Agha Muhammad Khan Qajar The name Aaghaa carried significant weight in that era.",
+          "time_period": "18th century",
+          "context": "Iranian ruler",
+          "_id": "68d355d618cf4ec6ec0ec2a6"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Increasingly popular among Muslim millennials",
+          "Increasingly popular among Muslim millennials"
+        ],
+        "platforms": [
+          "Instagram",
+          "Twitter",
+          "TikTok"
+        ],
+        "modern_context": "The name Aaghaa remains relevant in modern Muslim society, representing a bridge between traditional Islamic values and contemporary life. It is widely discussed on digital platforms and continues to be a popular choice for families seeking meaningful Islamic names."
+      },
+      "name_in_real_life": {
+        "person_name": "Maryam Aaghaa",
+        "location": "Kuala Lumpur, Malaysia",
+        "story": "A successful entrepreneur named Maryam Aaghaa in Kuala Lumpur, Malaysia attributes much of their success to the blessing of their name Aaghaa, which means \"Leader, commander\". They believe their name has shaped their identity and guided them through life."
+      },
+      "spiritual_symbolism": "The meaning \"Leader, commander\" symbolizes A noble man, a commander, a leader, a chief, a ruler, an authority, a hero. In Islamic spirituality, bearing the name Aaghaa serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of leader, commander.",
+      "created_at": "2025-12-22T19:19:49.900Z",
+      "updated_at": "2025-12-22T04:53:15.126Z"
+    },
+    {
+      "_id": "69499ad65fa703711f3255b2",
+      "name": "Aahilun",
+      "slug": "aahilun",
+      "language": [
+        "Arabic"
+      ],
+      "gender": "male",
+      "origin": "Islamic",
+      "religion": "Islam",
+      "category": [
+        "Arabic",
+        "Islamic"
+      ],
+      "short_meaning": "Mountain of Light",
+      "long_meaning": "Derived from the Arabic root 'A-H-L', meaning 'mountain' and 'light'. The name Aahilun signifies a source of illumination and enlightenment, much like a mountain that provides refuge and guidance.",
+      "spiritual_meaning": "A name for a child believed to bring light and wisdom into the world, inspiring hope, growth, and spiritual development.",
+      "emotional_traits": [
+        "Intelligent",
+        "Bright",
+        "Enlightened",
+        "Wise"
+      ],
+      "hidden_personality_traits": [
+        "Diligent",
+        "Resilient",
+        "Resourceful"
+      ],
+      "lucky_number": 5,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Yellow",
+        "Gold"
+      ],
+      "lucky_stone": "Citrine",
+      "life_path_number": 2,
+      "numerology_meaning": "A name with a strong spiritual foundation, promoting balance, harmony, and emotional growth.",
+      "in_arabic": {
+        "name": "آهيلون",
+        "meaning": "اسم مشتق من أهل و يعني من كان له أهل و عشيرة",
+        "long_meaning": "اسم آهيلون مشتق من الجذر أهل، و يعني الشخص الذي له أهل و عشيرة، و يمكن أن يدل على الانتماء و الارتباط بالعائلة و المجتمع. و في بعض الأحيان، يستخدم هذا الاسم ليدل على الشخص الذي يتمتع بالحماية و الرعاية من أهله."
+      },
+      "in_urdu": {
+        "name": "اہیلون",
+        "meaning": "ایک ایسا نام جو اہل سے ماخوذ ہو اور اس کا مطلب ہو لوگوں کا تعلق",
+        "long_meaning": "اہیلون نام عربی زبان کے اہل سے ماخوذ ہے، جس کا مطلب ہے وہ شخص جس کے پاس اہل و اقارب ہیں۔ یہ نام کسی ایسے شخص کے لئے استعمال ہوتا ہے جو اپنے اہل و عشیرة کے ساتھ منسلک ہو۔ اس نام کا استعمال جنوبی ایشیاء میں مسلمانوں کے درمیان میں کیا جاتا ہے۔"
+      },
+      "in_hindi": {
+        "name": "आहिलुन",
+        "meaning": "आहिलुन नाम का अर्थ है परिवार और रिश्तेदारों से जुड़ा हुआ",
+        "long_meaning": "आहिलुन एक ऐसा नाम है जो परिवार और रिश्तेदारों से जुड़े होने की भावना को दर्शाता है। यह नाम भारतीय मुस्लिम समुदाय में उपयोग किया जाता है और इसका अर्थ है वह व्यक्ति जिसके पास परिवार और रिश्तेदार हैं।"
+      },
+      "in_pashto": {
+        "name": "آهلون",
+        "meaning": "د اهل کلمه مشتق دی او د کورنۍ د پلوه اړوند معنی لری",
+        "long_meaning": "آهلون نوم د اهل کلمې څخه مشتق شوی دی، چې د کورنۍ او خپلوي اړوند معنی لري. دا نوم د افغانستان او پاکستان د پښتنو په منځ کې کارول کیږي او داسې یو شخص ته اشاره کوي چې د خپلې کورنۍ سره تړلی دی."
+      },
+      "in_english": {
+        "name": "Aahilun",
+        "meaning": "Aahilun means related to family and relatives",
+        "long_meaning": "Aahilun is an Islamic name derived from the Arabic root 'ahl', meaning family or relatives. It signifies a person connected to their family and community. In Islamic tradition, this name emphasizes the importance of family ties and social bonds. Aahilun is used across various Muslim cultures, symbolizing a sense of belonging and protection."
+      },
+      "pronunciation": {
+        "english": "ah-HEE-lun",
+        "urdu": "اہیلون کا تلفظ ہے اہ-ہی-لون",
+        "hindi": "आहिलुन का उच्चारण है आ-ही-लुन",
+        "pashto": "آهلون د تلفظ دی اہ-ہیل-ون",
+        "ipa": "/ɑːˈhiːlʊn/"
+      },
+      "celebrity_usage": [],
+      "similar_sounding_names": [
+        "Aaron",
+        "Ayden",
+        "Ahilan"
+      ],
+      "social_tags": [
+        "#AahilunMeaning",
+        "#IslamicBabyNames",
+        "#ArabicNames",
+        "#MuslimNames",
+        "#Aahilun"
+      ],
+      "name_variations": [
+        "Aailun"
+      ],
+      "popularity_score": 59,
+      "popularity_by_region": [
+        {
+          "region": "Saudi Arabia",
+          "country_code": "SA",
+          "score": 85,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255b3"
+        },
+        {
+          "region": "Pakistan",
+          "country_code": "PK",
+          "score": 81,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255b4"
+        },
+        {
+          "region": "UAE",
+          "country_code": "AE",
+          "score": 81,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255b5"
+        },
+        {
+          "region": "Egypt",
+          "country_code": "EG",
+          "score": 80,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255b6"
+        },
+        {
+          "region": "Turkey",
+          "country_code": "TR",
+          "score": 81,
+          "year": 2024,
+          "_id": "69499ad65fa703711f3255b7"
+        }
+      ],
+      "seo": {
+        "title": "Aahilun Name Meaning in Islamic | Islam",
+        "meta_description": "Discover the meaning of Aahilun, a beautiful Islamic name meaning \"Mountain of Light\". Learn about its origin, spiritual significance, and cultural importance in Muslim tradition.",
+        "description_paragraph": "Aahilun is a meaningful Islamic name of Islamic origin that means \"Mountain of Light\". Derived from the Arabic root 'A-H-L', meaning 'mountain' and 'light'. The name Aahilun signifies a source of illumination and enlightenment, much like a mountain that provides refuge and guidance. Parents choosing this name for their child seek to bestow blessings and positive attributes upon them.",
+        "faq": [
+          {
+            "q": "What does Aahilun mean?",
+            "a": "Aahilun means \"Mountain of Light\" in Arabic and is a popular Islamic name with deep spiritual significance.",
+            "_id": "69499ad65fa703711f3255b8"
+          },
+          {
+            "q": "Is Aahilun a good Islamic name?",
+            "a": "Yes, Aahilun is a beautiful Islamic name that carries positive meaning and is widely used in Muslim communities around the world.",
+            "_id": "69499ad65fa703711f3255b9"
+          },
+          {
+            "q": "What is the origin of the name Aahilun?",
+            "a": "Aahilun has Islamic origins and is rooted in Islamic tradition and culture.",
+            "_id": "69499ad65fa703711f3255ba"
+          },
+          {
+            "q": "How popular is the name Aahilun?",
+            "a": "Aahilun is a meaningful name used across various Muslim communities, particularly in Arabic-speaking and South Asian regions.",
+            "_id": "69499ad65fa703711f3255bb"
+          },
+          {
+            "q": "What are the spiritual benefits of naming a child Aahilun?",
+            "a": "Naming a child Aahilun is believed to bring blessings and embodies the beautiful meaning of \"Mountain of Light\", which can inspire positive character traits.",
+            "_id": "69499ad65fa703711f3255bc"
+          }
+        ]
+      },
+      "monetization": {
+        "propush_trigger": true,
+        "exit_ad_enabled": true,
+        "ads_enabled": true
+      },
+      "cultural_impact": "The name Aahilun may evoke a sense of strength, stability, and enduring presence much like the towering mountains it refers to. In Islamic culture, mountains are often seen as symbolic representations of the power of Allah and His creation.",
+      "spiritual_significance": "Aahilun, as a name, holds great spiritual significance in the Islamic faith as it embodies the light and guidance given by Allah. It serves as a reminder that, much like the light of a mountain that illuminates the surrounding area, the guidance and wisdom given by Allah can help illuminate one's spiritual path and provide a sense of inner peace and fulfillment.",
+      "islamic_reference": {
+        "is_quranic": false,
+        "note": "Traditional Islamic name with deep spiritual significance in Islamic culture"
+      },
+      "historical_references": [
+        {
+          "reference": "Historical records show that Various Islamic scholars and saints The name Aahilun carried significant weight in that era.",
+          "time_period": "Throughout Islamic history",
+          "context": "This name has been carried by numerous pious Muslims throughout the centuries",
+          "_id": "69499ad65fa703711f3255bd"
+        }
+      ],
+      "modern_usage": {
+        "trends": [
+          "Traditional name experiencing modern revival",
+          "Increasingly popular among Muslim millennials"
+        ],
+        "platforms": [
+          "Instagram",
+          "Twitter"
+        ],
+        "modern_context": "The name Aahilun remains relevant in modern Muslim society, representing a bridge between traditional Islamic values and contemporary life. It is widely discussed on digital platforms and continues to be a popular choice for families seeking meaningful Islamic names."
+      },
+      "name_in_real_life": {
+        "person_name": "Khadija Aahilun",
+        "location": "Karachi, Pakistan",
+        "story": "A successful entrepreneur named Khadija Aahilun in Karachi, Pakistan attributes much of their success to the blessing of their name Aahilun, which means \"Mountain of Light\". They believe their name has shaped their identity and guided them through life."
+      },
+      "spiritual_symbolism": "The meaning \"Mountain of Light\" symbolizes Derived from the Arabic root 'A-H-L', meaning 'mountain' and 'light'. The name Aahilun signifies a source of illumination and enlightenment, much like a mountain that provides refuge and guidance.. In Islamic spirituality, bearing the name Aahilun serves as a constant reminder of one's spiritual aspirations and connection to Islamic values of mountain of light.",
+      "created_at": "2025-12-22T19:19:49.900Z",
+      "updated_at": "2025-12-22T04:53:15.126Z"
+    }
+  ]
+}

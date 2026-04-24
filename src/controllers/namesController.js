@@ -20,6 +20,8 @@ const getNamesByReligion = async (religion, options = {}) => {
     sort = 'asc',
     gender,
     origin,
+    category,
+    theme,
     search,
     startsWith,
     length,
@@ -37,7 +39,16 @@ const getNamesByReligion = async (religion, options = {}) => {
 
   // Apply filters
   if (gender && gender.trim() !== '') {
-    filterQuery.gender = gender.toLowerCase();
+    // Use regex to match gender flexibly (e.g., "Male" matches "(Male)" or "Male/Female")
+    filterQuery.gender = { $regex: `\\b${gender}\\b`, $options: 'i' };
+  }
+
+  if (category && category.trim() !== '') {
+    filterQuery.category = { $regex: category, $options: 'i' };
+  }
+
+  if (theme && theme.trim() !== '') {
+    filterQuery.themes = { $regex: theme, $options: 'i' };
   }
 
   if (search && search.trim() !== '') {
@@ -137,8 +148,10 @@ const getNamesByReligion = async (religion, options = {}) => {
       },
       filtersApplied: {
         gender: gender || null,
-        search: search || null,
         origin: origin || null,
+        category: category || null,
+        theme: theme || null,
+        search: search || null,
         startsWith: startsWith || null,
         length: length || null,
         popularity: popularity || null,
@@ -413,10 +426,86 @@ const getSimilarNames = async (religion, slug) => {
   }
 };
 
+/**
+ * Get filter options for a specific religion
+ */
+const getFilters = async (religion) => {
+  const Model = models[religion.toLowerCase()];
+  if (!Model) {
+    throw new Error(`Invalid religion: ${religion}`);
+  }
+
+  try {
+    // Get distinct letters using aggregation on first character of name
+    const lettersResults = await Model.aggregate([
+      { $project: { firstLetter: { $substrCP: ["$name", 0, 1] } } },
+      { $group: { _id: "$firstLetter" } },
+      { $sort: { _id: 1 } }
+    ]);
+    const letters = lettersResults.map(r => r._id).sort();
+
+    // Get distinct genders and origins using distinct()
+    const gendersRaw = await Model.distinct('gender');
+    const originsRaw = await Model.distinct('origin');
+
+    // Normalize and deduplicate
+    const normalizeAndDeduplicate = (arr) => {
+      const map = new Map();
+      arr.filter(val => val && val.trim()).forEach(val => {
+        const normalized = val.trim().toLowerCase();
+        if (!map.has(normalized)) {
+          map.set(normalized, val.trim());
+        }
+      });
+      return Array.from(map.values()).sort();
+    };
+
+    const genders = normalizeAndDeduplicate(gendersRaw);
+    const origins = normalizeAndDeduplicate(originsRaw);
+
+    // Get distinct themes and categories using aggregation with unwind
+    const themesResults = await Model.aggregate([
+      { $unwind: "$themes" },
+      { $group: { _id: "$themes" } },
+      { $sort: { _id: 1 } }
+    ]);
+    const themesRaw = themesResults.map(r => r._id);
+    const themes = normalizeAndDeduplicate(themesRaw);
+
+    const categoriesResults = await Model.aggregate([
+      { $unwind: "$category" },
+      { $group: { _id: "$category" } },
+      { $sort: { _id: 1 } }
+    ]);
+    const categoriesRaw = categoriesResults.map(r => r._id);
+    const categories = normalizeAndDeduplicate(categoriesRaw);
+
+    // Get total names count
+    const total_names = await Model.countDocuments();
+
+    return {
+      success: true,
+      religion,
+      data: {
+        letters,
+        genders,
+        origins,
+        themes,
+        categories,
+        total_names
+      }
+    };
+  } catch (error) {
+    logger.error('Error in getFilters:', error);
+    throw error;
+  }
+};
+
 module.exports = {
   getNamesByReligion,
   getNameBySlug,
   getNamesByLetter,
   getRelatedNames,
-  getSimilarNames
+  getSimilarNames,
+  getFilters
 };

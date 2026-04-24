@@ -40,15 +40,8 @@ router.get('/search', async (req, res, next) => {
  */
 router.get('/:religion/filters', async (req, res, next) => {
   try {
-    // Return mock filters for now - can be enhanced later
-    res.json({
-      success: true,
-      religion: req.params.religion,
-      filters: {
-        genders: ['male', 'female'],
-        letters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
-      }
-    });
+    const result = await namesController.getFilters(req.params.religion);
+    res.json(result);
   } catch (error) {
     next(error);
   }
