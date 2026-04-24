@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ad79017e496b59a0cf521073bbc7c3aa145025f2b4b517b9613d074137a7113
-size 1657
+{
+  "name": "nameverse-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Nameverse - comprehensive name meanings database for Islamic, Christian, and Hindu names",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["names", "api", "express", "mongodb", "redis", "name-meanings"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.5.0",
+    "ioredis": "^5.3.2",
+    "node-cache": "^5.1.2",
+    "winston": "^3.10.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "express-rate-limit": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
