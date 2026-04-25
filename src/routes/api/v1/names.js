@@ -33,6 +33,54 @@ router.get('/search', async (req, res, next) => {
 });
 
 /**
+ * @route   GET /api/v1/names/:religion
+ * @desc    Get paginated names by religion with optional filters
+ * @param   {string} religion - Religion: islamic, christian, hindu
+ * @query   {number} page - Page number (default: 1)
+ * @query   {number} limit - Items per page (default: 50, max: 100)
+ * @query   {string} gender - Filter by gender: male, female, unisex
+ * @query   {string} origin - Filter by origin
+ * @query   {string} category - Filter by category
+ * @query   {string} theme - Filter by theme
+ * @query   {string} startsWith - Filter names starting with letter
+ * @query   {string} search - Search query
+ * @query   {string} sort - Sort order: asc, desc, popular, trending (default: asc)
+ * @access  Public
+ */
+router.get('/:religion', async (req, res, next) => {
+  try {
+    const { religion } = req.params;
+    const {
+      page = 1,
+      limit = 50,
+      gender,
+      origin,
+      category,
+      theme,
+      startsWith,
+      search,
+      sort = 'asc'
+    } = req.query;
+
+    const result = await namesController.getNamesByReligion(religion, {
+      page: parseInt(page) || 1,
+      limit: Math.min(parseInt(limit) || 50, 100),
+      gender,
+      origin,
+      category,
+      theme,
+      startsWith,
+      search,
+      sort
+    });
+
+    res.json(result);
+  } catch (error) {
+    next(error);
+  }
+});
+
+/**
  * @route   GET /api/v1/names/:religion/filters
  * @desc    Get available filters for a religion (genders, origins, letters)
  * @param   {string} religion - Religion: islamic, christian, hindu
