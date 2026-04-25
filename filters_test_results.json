@@ -1,0 +1,196 @@
+{
+  "islamic_filters": {
+    "letters": [
+      "A",
+      "B",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "W",
+      "Y",
+      "Z"
+    ],
+    "genders": [
+      "Female",
+      "Male",
+      "Unisex"
+    ],
+    "origins": [
+      "Arabic",
+      "Islamic",
+      "Persian"
+    ],
+    "themes": [],
+    "categories": [
+      "Animal",
+      "Arabic",
+      "Beauty",
+      "Boy",
+      "Classic",
+      "Female",
+      "Floral",
+      "Flower",
+      "Flowers",
+      "Fruit",
+      "Garden",
+      "Girl",
+      "Islamic",
+      "Light",
+      "Modern",
+      "Moon",
+      "Nature",
+      "Noble",
+      "Persian",
+      "Power",
+      "Powerful",
+      "Quranic",
+      "Rare",
+      "Religious",
+      "Spiritual",
+      "Strong",
+      "Unisex",
+      "Warrior",
+      "Wisdom",
+      "Wise"
+    ],
+    "total_names": 18692
+  },
+  "islamic_names_test": {
+    "adultTaggedNamesInDB": [],
+    "leakedAdultNames": [],
+    "defaultExclusionCount": 100,
+    "customExclusionCount": 50
+  },
+  "christian_filters": {
+    "letters": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T",
+      "V",
+      "W",
+      "Z"
+    ],
+    "genders": [
+      "Female",
+      "Male"
+    ],
+    "origins": [
+      "Anglo-Saxon",
+      "Biblical",
+      "English",
+      "German",
+      "Germanic",
+      "Greek",
+      "Hebrew",
+      "Latin",
+      "Unknown"
+    ],
+    "themes": [],
+    "categories": [
+      "Biblical",
+      "Boy",
+      "Christian",
+      "Female",
+      "Girl",
+      "Saint",
+      "Spiritial",
+      "Spiritian",
+      "Spiritical",
+      "Spiritual"
+    ],
+    "total_names": 12876
+  },
+  "christian_names_test": {
+    "adultTaggedNamesInDB": [],
+    "leakedAdultNames": [],
+    "defaultExclusionCount": 100,
+    "customExclusionCount": 50
+  },
+  "hindu_filters": {
+    "letters": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "P",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "Y"
+    ],
+    "genders": [
+      "Female",
+      "Male",
+      "Unisex"
+    ],
+    "origins": [
+      "Hindu",
+      "Sanskrit"
+    ],
+    "themes": [],
+    "categories": [
+      "Boy",
+      "Female",
+      "Girl",
+      "God",
+      "Goddess",
+      "Hindu",
+      "Moon",
+      "Mythological",
+      "Mythology",
+      "Nature",
+      "Power",
+      "Rare",
+      "Spiritual",
+      "Warrior",
+      "Wisdom"
+    ],
+    "total_names": 10410
+  },
+  "hindu_names_test": {
+    "adultTaggedNamesInDB": [],
+    "leakedAdultNames": [],
+    "defaultExclusionCount": 100,
+    "customExclusionCount": 50
+  }
+}

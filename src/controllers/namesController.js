@@ -13,6 +13,10 @@ const models = {
 /**
  * Get names by religion with filtering and pagination
  */
+// List of words that if found in any category, the name should be excluded
+// Can be overridden via options.excludeCategoryWords
+const DEFAULT_EXCLUDED_CATEGORY_WORDS = ['adult'];
+
 const getNamesByReligion = async (religion, options = {}) => {
   const {
     limit = 20,
@@ -26,7 +30,8 @@ const getNamesByReligion = async (religion, options = {}) => {
     startsWith,
     length,
     popularity,
-    trending
+    trending,
+    excludeCategoryWords
   } = options;
 
   const Model = models[religion.toLowerCase()];
@@ -36,6 +41,23 @@ const getNamesByReligion = async (religion, options = {}) => {
 
   const skip = (page - 1) * limit;
   const filterQuery = {};
+  const excludeWords = excludeCategoryWords || DEFAULT_EXCLUDED_CATEGORY_WORDS;
+
+  // Apply category word exclusion: if any category contains excluded words, filter out the name
+  if (excludeWords && excludeWords.length > 0) {
+    const wordConditions = excludeWords.map(word => ({
+      category: { $not: { $regex: `\\b${word}\\b`, $options: 'i' } }
+    }));
+    // If category field exists and is not empty, exclude names with forbidden words
+    filterQuery.$and = filterQuery.$and || [];
+    filterQuery.$and.push({
+      $or: [
+        { category: { $exists: false } },
+        { category: { $size: 0 } },
+        { $and: wordConditions }
+      ]
+    });
+  }
 
   // Apply filters
   if (gender && gender.trim() !== '') {
@@ -427,7 +449,42 @@ const getSimilarNames = async (religion, slug) => {
 };
 
 /**
- * Get filter options for a specific religion
+ * Build a MongoDB match stage to exclude names whose category contains forbidden words
+ */
+const buildCategoryExclusionMatch = (excludeWords = DEFAULT_EXCLUDED_CATEGORY_WORDS) => {
+  if (!excludeWords || excludeWords.length === 0) return null;
+  const wordConditions = excludeWords.map(word => ({
+    category: { $not: { $regex: `\\b${word}\\b`, $options: 'i' } }
+  }));
+  return {
+    $match: {
+      $or: [
+        { category: { $exists: false } },
+        { category: { $size: 0 } },
+        { $and: wordConditions }
+      ]
+    }
+  };
+};
+
+/**
+ * Normalize a filter value: remove brackets, keep only single clean words
+ */
+const normalizeFilterValue = (val) => {
+  if (!val || !val.trim()) return null;
+  let cleaned = val.trim();
+  cleaned = cleaned.replace(/[()[\]]/g, '');
+  cleaned = cleaned.trim();
+  if (!/^[\p{L}\p{M}'-]+$/u.test(cleaned)) {
+    return null;
+  }
+  return cleaned;
+};
+
+/**
+ * Get filter options for a specific religion.
+ * Only returns filter values that have MORE than 100 names associated with them.
+ * Applies category word exclusion (e.g. 'adult') so excluded names do not count toward filter totals.
  */
 const getFilters = async (religion) => {
   const Model = models[religion.toLowerCase()];
@@ -436,68 +493,107 @@ const getFilters = async (religion) => {
   }
 
   try {
-    // Get distinct letters using aggregation on first character of name
-    const lettersResults = await Model.aggregate([
+    const exclusionStage = buildCategoryExclusionMatch();
+
+    // --- Letters (first character of name) ---
+    const lettersPipeline = [
+      ...(exclusionStage ? [exclusionStage] : []),
       { $project: { firstLetter: { $substrCP: ["$name", 0, 1] } } },
-      { $group: { _id: "$firstLetter" } },
+      { $group: { _id: "$firstLetter", count: { $sum: 1 } } },
+      { $match: { count: { $gt: 100 } } },
       { $sort: { _id: 1 } }
-    ]);
-    // Keep only actual single letters (Unicode letters), remove newlines, dots, symbols, etc.
+    ];
+    const lettersResults = await Model.aggregate(lettersPipeline);
     const letters = lettersResults
       .map(r => r._id)
       .filter(l => l && /^\p{L}$/u.test(l))
       .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-    // Get distinct genders and origins using distinct()
-    const gendersRaw = await Model.distinct('gender');
-    const originsRaw = await Model.distinct('origin');
+    // --- Genders ---
+    const gendersPipeline = [
+      ...(exclusionStage ? [exclusionStage] : []),
+      { $match: { gender: { $exists: true, $ne: null, $ne: "" } } },
+      { $group: { _id: "$gender", count: { $sum: 1 } } },
+      { $match: { count: { $gt: 100 } } },
+      { $sort: { _id: 1 } }
+    ];
+    const gendersRaw = await Model.aggregate(gendersPipeline);
+    const gendersMap = new Map();
+    gendersRaw.forEach(r => {
+      const cleaned = normalizeFilterValue(r._id);
+      if (!cleaned) return;
+      const normalized = cleaned.toLowerCase();
+      if (!gendersMap.has(normalized)) {
+        gendersMap.set(normalized, cleaned);
+      }
+    });
+    const genders = Array.from(gendersMap.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-    // Normalize: remove brackets, keep only single clean words, deduplicate
-    const normalizeAndDeduplicate = (arr) => {
-      const map = new Map();
-      arr.filter(val => val && val.trim()).forEach(val => {
-        let cleaned = val.trim();
+    // --- Origins ---
+    const originsPipeline = [
+      ...(exclusionStage ? [exclusionStage] : []),
+      { $match: { origin: { $exists: true, $ne: null, $ne: "" } } },
+      { $group: { _id: "$origin", count: { $sum: 1 } } },
+      { $match: { count: { $gt: 100 } } },
+      { $sort: { _id: 1 } }
+    ];
+    const originsRaw = await Model.aggregate(originsPipeline);
+    const originsMap = new Map();
+    originsRaw.forEach(r => {
+      const cleaned = normalizeFilterValue(r._id);
+      if (!cleaned) return;
+      const normalized = cleaned.toLowerCase();
+      if (!originsMap.has(normalized)) {
+        originsMap.set(normalized, cleaned);
+      }
+    });
+    const origins = Array.from(originsMap.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-        // Remove parentheses, brackets
-        cleaned = cleaned.replace(/[()[\]]/g, '');
-        cleaned = cleaned.trim();
-
-        // Only keep single-word values: letters (including Arabic), apostrophes, hyphens
-        // Reject anything with spaces, slashes, commas, 'and', 'or', etc.
-        if (!/^[\p{L}\p{M}'-]+$/u.test(cleaned)) {
-          return; // skip multi-word or special-character values
-        }
-
-        const normalized = cleaned.toLowerCase();
-        if (!map.has(normalized)) {
-          map.set(normalized, cleaned);
-        }
-      });
-      return Array.from(map.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
-    };
-
-    const genders = normalizeAndDeduplicate(gendersRaw);
-    const origins = normalizeAndDeduplicate(originsRaw);
-
-    // Get distinct themes and categories using aggregation with unwind
-    const themesResults = await Model.aggregate([
+    // --- Themes ---
+    const themesPipeline = [
+      ...(exclusionStage ? [exclusionStage] : []),
+      { $match: { themes: { $exists: true, $ne: [] } } },
       { $unwind: "$themes" },
-      { $group: { _id: "$themes" } },
+      { $group: { _id: "$themes", count: { $sum: 1 } } },
+      { $match: { count: { $gt: 100 } } },
       { $sort: { _id: 1 } }
-    ]);
-    const themesRaw = themesResults.map(r => r._id);
-    const themes = normalizeAndDeduplicate(themesRaw);
+    ];
+    const themesRaw = await Model.aggregate(themesPipeline);
+    const themesMap = new Map();
+    themesRaw.forEach(r => {
+      const cleaned = normalizeFilterValue(r._id);
+      if (!cleaned) return;
+      const normalized = cleaned.toLowerCase();
+      if (!themesMap.has(normalized)) {
+        themesMap.set(normalized, cleaned);
+      }
+    });
+    const themes = Array.from(themesMap.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-    const categoriesResults = await Model.aggregate([
+    // --- Categories ---
+    const categoriesPipeline = [
+      ...(exclusionStage ? [exclusionStage] : []),
+      { $match: { category: { $exists: true, $ne: [] } } },
       { $unwind: "$category" },
-      { $group: { _id: "$category" } },
+      { $group: { _id: "$category", count: { $sum: 1 } } },
+      { $match: { count: { $gt: 100 } } },
       { $sort: { _id: 1 } }
-    ]);
-    const categoriesRaw = categoriesResults.map(r => r._id);
-    const categories = normalizeAndDeduplicate(categoriesRaw);
+    ];
+    const categoriesRaw = await Model.aggregate(categoriesPipeline);
+    const categoriesMap = new Map();
+    categoriesRaw.forEach(r => {
+      const cleaned = normalizeFilterValue(r._id);
+      if (!cleaned) return;
+      const normalized = cleaned.toLowerCase();
+      if (!categoriesMap.has(normalized)) {
+        categoriesMap.set(normalized, cleaned);
+      }
+    });
+    const categories = Array.from(categoriesMap.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-    // Get total names count
-    const total_names = await Model.countDocuments();
+    // Get total names count (excluding filtered ones)
+    const totalMatch = exclusionStage ? exclusionStage.$match : {};
+    const total_names = await Model.countDocuments(totalMatch);
 
     return {
       success: true,
