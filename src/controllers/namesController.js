@@ -442,22 +442,38 @@ const getFilters = async (religion) => {
       { $group: { _id: "$firstLetter" } },
       { $sort: { _id: 1 } }
     ]);
-    const letters = lettersResults.map(r => r._id).sort();
+    // Keep only actual single letters (Unicode letters), remove newlines, dots, symbols, etc.
+    const letters = lettersResults
+      .map(r => r._id)
+      .filter(l => l && /^\p{L}$/u.test(l))
+      .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
     // Get distinct genders and origins using distinct()
     const gendersRaw = await Model.distinct('gender');
     const originsRaw = await Model.distinct('origin');
 
-    // Normalize and deduplicate
+    // Normalize: remove brackets, keep only single clean words, deduplicate
     const normalizeAndDeduplicate = (arr) => {
       const map = new Map();
       arr.filter(val => val && val.trim()).forEach(val => {
-        const normalized = val.trim().toLowerCase();
+        let cleaned = val.trim();
+
+        // Remove parentheses, brackets
+        cleaned = cleaned.replace(/[()[\]]/g, '');
+        cleaned = cleaned.trim();
+
+        // Only keep single-word values: letters (including Arabic), apostrophes, hyphens
+        // Reject anything with spaces, slashes, commas, 'and', 'or', etc.
+        if (!/^[\p{L}\p{M}'-]+$/u.test(cleaned)) {
+          return; // skip multi-word or special-character values
+        }
+
+        const normalized = cleaned.toLowerCase();
         if (!map.has(normalized)) {
-          map.set(normalized, val.trim());
+          map.set(normalized, cleaned);
         }
       });
-      return Array.from(map.values()).sort();
+      return Array.from(map.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
     };
 
     const genders = normalizeAndDeduplicate(gendersRaw);
