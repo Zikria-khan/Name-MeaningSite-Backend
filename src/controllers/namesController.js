@@ -39,6 +39,31 @@ const getNamesByReligion = async (religion, options = {}) => {
     throw new Error(`Invalid religion: ${religion}`);
   }
 
+  // Input validation and parsing
+  let parsedCategory = null;
+  if (category && category.trim() !== '') {
+    try {
+      const decodedCategory = decodeURIComponent(category);
+      const categoryWords = decodedCategory.split(/[,\s]+/).map(w => w.trim()).filter(w => w.length > 0);
+      const uniqueWords = [...new Set(categoryWords.map(w => w.toLowerCase()))];
+      if (uniqueWords.length < 2 || uniqueWords.length > 3) {
+        throw new Error('Category filter must contain 2-3 unique words');
+      }
+      parsedCategory = uniqueWords; // Use lowercase unique words for filtering
+    } catch (error) {
+      if (error.message.includes('URI malformed')) {
+        throw new Error('Invalid category encoding');
+      }
+      throw error;
+    }
+  }
+
+  if (gender && gender.trim() !== '') {
+    if (/\s|,/.test(gender)) {
+      throw new Error('Gender filter must be a single word');
+    }
+  }
+
   const skip = (page - 1) * limit;
   const filterQuery = {};
   const excludeWords = excludeCategoryWords || DEFAULT_EXCLUDED_CATEGORY_WORDS;
@@ -65,8 +90,14 @@ const getNamesByReligion = async (religion, options = {}) => {
     filterQuery.gender = { $regex: `\\b${gender}\\b`, $options: 'i' };
   }
 
-  if (category && category.trim() !== '') {
-    filterQuery.category = { $regex: category, $options: 'i' };
+  if (parsedCategory && parsedCategory.length > 0) {
+    // Category is an array, match documents where category contains all specified words
+    filterQuery.$and = filterQuery.$and || [];
+    parsedCategory.forEach(word => {
+      filterQuery.$and.push({
+        category: { $regex: `\\b${word}\\b`, $options: 'i' }
+      });
+    });
   }
 
   if (theme && theme.trim() !== '') {

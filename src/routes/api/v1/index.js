@@ -3,9 +3,13 @@ const router = express.Router();
 
 // Import route modules
 const namesRoutes = require('./names');
+const healthRoutes = require('./health');
+const articlesRoutes = require('./articles');
 
 // Mount routes
 router.use('/names', namesRoutes);
+router.use('/health', healthRoutes);
+router.use('/articles', articlesRoutes);
 
 // API v1 root endpoint
 router.get('/', (req, res) => {
@@ -24,6 +28,17 @@ router.get('/', (req, res) => {
         similar: 'GET /api/v1/names/:religion/:slug/similar',
         filters: 'GET /api/v1/names/:religion/filters',
         search: 'GET /api/v1/names/search?q=query'
+      },
+      articles: {
+        list: 'GET /api/v1/articles?page=1&limit=10',
+        featured: 'GET /api/v1/articles/featured?limit=5',
+        latest: 'GET /api/v1/articles/latest?limit=10',
+        categories: 'GET /api/v1/articles/categories',
+        search: 'GET /api/v1/articles/search?q=query',
+        byTag: 'GET /api/v1/articles/tag/:tag',
+        related: 'GET /api/v1/articles/related/:slug',
+        stats: 'GET /api/v1/articles/stats',
+        single: 'GET /api/v1/articles/:slug'
       }
     },
     documentation: 'https://github.com/nameverse/api',
