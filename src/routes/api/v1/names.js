@@ -43,6 +43,7 @@ router.get('/search', async (req, res, next) => {
  * @query   {string} category - Filter by category
  * @query   {string} theme - Filter by theme
  * @query   {string} startsWith - Filter names starting with letter
+ * @query   {string} alphabet - Alias for startsWith
  * @query   {string} search - Search query
  * @query   {string} sort - Sort order: asc, desc, popular, trending (default: asc)
  * @access  Public
@@ -58,6 +59,7 @@ router.get('/:religion', async (req, res, next) => {
       category,
       theme,
       startsWith,
+      alphabet,
       search,
       sort = 'asc'
     } = req.query;
@@ -69,7 +71,7 @@ router.get('/:religion', async (req, res, next) => {
       origin,
       category,
       theme,
-      startsWith,
+      startsWith: startsWith || alphabet,
       search,
       sort
     });

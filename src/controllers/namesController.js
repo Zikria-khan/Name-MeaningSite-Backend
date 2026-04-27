@@ -46,8 +46,8 @@ const getNamesByReligion = async (religion, options = {}) => {
       const decodedCategory = decodeURIComponent(category);
       const categoryWords = decodedCategory.split(/[,\s]+/).map(w => w.trim()).filter(w => w.length > 0);
       const uniqueWords = [...new Set(categoryWords.map(w => w.toLowerCase()))];
-      if (uniqueWords.length < 2 || uniqueWords.length > 3) {
-        throw new Error('Category filter must contain 2-3 unique words');
+      if (uniqueWords.length === 0 || uniqueWords.length > 3) {
+        throw new Error('Category filter must contain 1-3 unique words');
       }
       parsedCategory = uniqueWords; // Use lowercase unique words for filtering
     } catch (error) {
@@ -499,22 +499,23 @@ const buildCategoryExclusionMatch = (excludeWords = DEFAULT_EXCLUDED_CATEGORY_WO
 };
 
 /**
- * Normalize a filter value: remove brackets, keep only single clean words
+ * Normalize a filter value: remove brackets, punctuation, and extra spacing
  */
 const normalizeFilterValue = (val) => {
   if (!val || !val.trim()) return null;
   let cleaned = val.trim();
   cleaned = cleaned.replace(/[()[\]]/g, '');
-  cleaned = cleaned.trim();
-  if (!/^[\p{L}\p{M}'-]+$/u.test(cleaned)) {
-    return null;
-  }
+  cleaned = cleaned.replace(/\s*[,/]+\s*/g, ' ');
+  cleaned = cleaned.replace(/\s+/g, ' ').trim();
+  cleaned = cleaned.replace(/\b(?:e\.g\.?|etc\.?|unknown|unspecified|not directly|derived from|possibly|from|influenced by)\b/gi, '');
+  cleaned = cleaned.replace(/\s+/g, ' ').trim();
+  if (!cleaned) return null;
   return cleaned;
 };
 
 /**
  * Get filter options for a specific religion.
- * Only returns filter values that have MORE than 100 names associated with them.
+ * Returns normalized origin and category values and includes all category filters.
  * Applies category word exclusion (e.g. 'adult') so excluded names do not count toward filter totals.
  */
 const getFilters = async (religion) => {
@@ -565,7 +566,6 @@ const getFilters = async (religion) => {
       ...(exclusionStage ? [exclusionStage] : []),
       { $match: { origin: { $exists: true, $ne: null, $ne: "" } } },
       { $group: { _id: "$origin", count: { $sum: 1 } } },
-      { $match: { count: { $gt: 100 } } },
       { $sort: { _id: 1 } }
     ];
     const originsRaw = await Model.aggregate(originsPipeline);
@@ -607,7 +607,6 @@ const getFilters = async (religion) => {
       { $match: { category: { $exists: true, $ne: [] } } },
       { $unwind: "$category" },
       { $group: { _id: "$category", count: { $sum: 1 } } },
-      { $match: { count: { $gt: 100 } } },
       { $sort: { _id: 1 } }
     ];
     const categoriesRaw = await Model.aggregate(categoriesPipeline);
