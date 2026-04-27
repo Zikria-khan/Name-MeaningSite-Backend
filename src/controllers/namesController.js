@@ -501,16 +501,57 @@ const buildCategoryExclusionMatch = (excludeWords = DEFAULT_EXCLUDED_CATEGORY_WO
 /**
  * Normalize a filter value: remove brackets, punctuation, and extra spacing
  */
+const FILTER_NORMALIZATION_STOPWORDS = new Set([
+  'of', 'the', 'and', 'or', 'in', 'on', 'with', 'for', 'from', 'by', 'to',
+  'a', 'an', 'is', 'are', 'was', 'were', 'this', 'that', 'these', 'those',
+  'name', 'names', 'origin', 'language', 'meaning', 'derived', 'used',
+  'based', 'possible', 'potentially', 'may', 'not', 'any', 'specific',
+  'source', 'sources', 'term', 'terms', 'word', 'words', 'including',
+  'meaningful', 'meaningful', 'culture', 'religion', 'religious', 'ancient',
+  'modern', 'historical', 'classical', 'western', 'spiritual', 'biblical',
+  'christian', 'islamic', 'hindu', 'roman', 'greek', 'latin'
+]);
+const FILTER_NORMALIZATION_KEYWORDS = [
+  'Arabic', 'Hebrew', 'Greek', 'Latin', 'French', 'German', 'Spanish',
+  'English', 'African', 'American', 'Celtic', 'Irish', 'Scottish',
+  'Welsh', 'Scandinavian', 'Norse', 'Japanese', 'Chinese', 'Korean',
+  'Italian', 'Russian', 'Portuguese', 'Polish', 'Turkish', 'Persian',
+  'Aramaic', 'Sanskrit', 'Hindu', 'Islamic', 'Muslim', 'Jewish',
+  'Hebrew', 'Egyptian', 'Roman', 'British', 'Icelandic', 'Nigerian',
+  'Yoruba', 'Swahili', 'Zulu', 'Kikuyu', 'Vietnamese', 'Thai', 'Greek',
+  'Biblical', 'Saint', 'Modern', 'Ancient', 'Nature', 'Fantasy',
+  'Historical', 'City', 'Country'
+];
+
+const extractFilterToken = (raw) => {
+  if (!raw || !raw.trim()) return null;
+  const cleaned = raw
+    .replace(/[()[\]{}]/g, ' ')
+    .replace(/['"“”‘’]/g, ' ')
+    .replace(/[.,;:?]/g, ' ')
+    .replace(/\s*[-/]+\s*/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (!cleaned) return null;
+
+  const keyword = FILTER_NORMALIZATION_KEYWORDS.find(keyword =>
+    new RegExp(`\\b${keyword}\\b`, 'i').test(cleaned)
+  );
+  if (keyword) return keyword;
+
+  const segments = cleaned.split(/\b(?:or|and)\b/i).map(s => s.trim()).filter(Boolean);
+  const candidate = segments.length ? segments[0] : cleaned;
+
+  const words = candidate.split(/\s+/g).filter(word => word && !FILTER_NORMALIZATION_STOPWORDS.has(word.toLowerCase()));
+  if (words.length === 0) return null;
+
+  return words[0].replace(/[^\p{L}\p{N}-]/gu, '').trim() || null;
+};
+
 const normalizeFilterValue = (val) => {
   if (!val || !val.trim()) return null;
-  let cleaned = val.trim();
-  cleaned = cleaned.replace(/[()[\]]/g, '');
-  cleaned = cleaned.replace(/\s*[,/]+\s*/g, ' ');
-  cleaned = cleaned.replace(/\s+/g, ' ').trim();
-  cleaned = cleaned.replace(/\b(?:e\.g\.?|etc\.?|unknown|unspecified|not directly|derived from|possibly|from|influenced by)\b/gi, '');
-  cleaned = cleaned.replace(/\s+/g, ' ').trim();
-  if (!cleaned) return null;
-  return cleaned;
+  return extractFilterToken(val);
 };
 
 /**
