@@ -602,24 +602,25 @@ const getFilters = async (religion) => {
     });
     const genders = Array.from(gendersMap.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-    // --- Origins ---
-    const originsPipeline = [
-      ...(exclusionStage ? [exclusionStage] : []),
-      { $match: { origin: { $exists: true, $ne: null, $ne: "" } } },
-      { $group: { _id: "$origin", count: { $sum: 1 } } },
-      { $sort: { _id: 1 } }
-    ];
-    const originsRaw = await Model.aggregate(originsPipeline);
-    const originsMap = new Map();
-    originsRaw.forEach(r => {
-      const cleaned = normalizeFilterValue(r._id);
-      if (!cleaned) return;
-      const normalized = cleaned.toLowerCase();
-      if (!originsMap.has(normalized)) {
-        originsMap.set(normalized, cleaned);
-      }
-    });
-    const origins = Array.from(originsMap.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+     // --- Origins ---
+     const originsPipeline = [
+       ...(exclusionStage ? [exclusionStage] : []),
+       { $match: { origin: { $exists: true, $ne: null, $ne: "" } } },
+       { $group: { _id: "$origin", count: { $sum: 1 } } },
+       { $match: { count: { $gt: 50 } } },
+       { $sort: { _id: 1 } }
+     ];
+     const originsRaw = await Model.aggregate(originsPipeline);
+     const originsMap = new Map();
+     originsRaw.forEach(r => {
+       const cleaned = normalizeFilterValue(r._id);
+       if (!cleaned) return;
+       const normalized = cleaned.toLowerCase();
+       if (!originsMap.has(normalized)) {
+         originsMap.set(normalized, cleaned);
+       }
+     });
+     const origins = Array.from(originsMap.values()).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
     // --- Themes ---
     const themesPipeline = [
